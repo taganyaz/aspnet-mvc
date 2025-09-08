@@ -1,0 +1,334 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\pages\\movies\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:pages\\movies\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\pages\\movies\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:pages\\movies\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\pages\\movies\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:pages\\movies\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\pages\\privacy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:pages\\privacy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\pages\\movies\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:pages\\movies\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\data\\razorpagesmoviecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:data\\razorpagesmoviecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Migrations\\20250905165820_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250905165820_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\pages\\movies\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:pages\\movies\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\pages\\movies\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:pages\\movies\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\pages\\movies\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:pages\\movies\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\pages\\movies\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:pages\\movies\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\pages\\movies\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:pages\\movies\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\pages\\movies\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:pages\\movies\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|d:\\data\\learn\\asp.net mvc\\razorpagesmovie\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725010CC-92F6-4F05-A1C5-4D2FA9520269}|RazorPagesMovie.csproj|solutionrelative:models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-05T17:21:57.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Privacy.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "Pages\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-05T17:11:01.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Privacy.cshtml.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Privacy.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Privacy.cshtml.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Privacy.cshtml.cs",
+              "RelativeToolTip": "Pages\\Privacy.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T17:10:55.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Movies\\Index.cshtml.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Movies\\Index.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T15:04:53.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Movies\\Details.cshtml.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Details.cshtml.cs",
+              "RelativeToolTip": "Pages\\Movies\\Details.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T15:04:52.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Details.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Movies\\Details.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Details.cshtml",
+              "RelativeToolTip": "Pages\\Movies\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-05T15:04:52.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Movies\\Edit.cshtml.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Edit.cshtml.cs",
+              "RelativeToolTip": "Pages\\Movies\\Edit.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T15:04:52.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAC9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T14:01:10.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Create.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Movies\\Create.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Create.cshtml",
+              "RelativeToolTip": "Pages\\Movies\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-05T15:04:52.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Movies\\Create.cshtml.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Create.cshtml.cs",
+              "RelativeToolTip": "Pages\\Movies\\Create.cshtml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAmwCkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T15:04:52.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Movies\\Index.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Movies\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-05T15:04:53.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Movies\\Delete.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Delete.cshtml",
+              "RelativeToolTip": "Pages\\Movies\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-05T15:04:52.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Movies\\Delete.cshtml.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Delete.cshtml.cs",
+              "RelativeToolTip": "Pages\\Movies\\Delete.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T15:04:53.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RazorPagesMovieContext.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Data\\RazorPagesMovieContext.cs",
+              "RelativeDocumentMoniker": "Data\\RazorPagesMovieContext.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Data\\RazorPagesMovieContext.cs",
+              "RelativeToolTip": "Data\\RazorPagesMovieContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T15:04:52.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-05T15:07:59.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20250905165820_InitialCreate.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Migrations\\20250905165820_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250905165820_InitialCreate.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Migrations\\20250905165820_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20250905165820_InitialCreate.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T16:58:20.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Movies\\Edit.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Pages\\Movies\\Edit.cshtml",
+              "RelativeToolTip": "Pages\\Movies\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-05T15:04:52.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "Models\\Movie.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\RazorPagesMovie\\Models\\Movie.cs",
+              "RelativeToolTip": "Models\\Movie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T14:57:47.653Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

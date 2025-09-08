@@ -1,0 +1,721 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\departments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\departments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\departments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\departments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\instructors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\instructors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\controllers\\instructorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:controllers\\instructorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\instructors\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\instructors\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\instructors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\instructors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\models\\schoolviewmodels\\assignedcoursedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:models\\schoolviewmodels\\assignedcoursedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\models\\officeassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:models\\officeassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\models\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:models\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\courses\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\courses\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\courses\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\courses\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\instructors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\instructors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\models\\schoolviewmodels\\instructorindexdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:models\\schoolviewmodels\\instructorindexdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\data\\schoolcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:data\\schoolcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\models\\courseassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:models\\courseassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\migrations\\20250908115826_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:migrations\\20250908115826_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\models\\schoolviewmodels\\enrollmentdategroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:models\\schoolviewmodels\\enrollmentdategroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:paginatedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\contosouniversity.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:contosouniversity.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|d:\\data\\learn\\asp.net mvc\\contosouniversity\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D64C1A21-3DB2-4BB3-9331-C8812FEF2D9D}|ContosoUniversity.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Departments\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departments\\Edit.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Departments\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Departments\\Edit.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T19:27:42.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Departments\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departments\\Index.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Departments\\Index.cshtml",
+              "RelativeToolTip": "Views\\Departments\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T19:18:37.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAgwG0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T19:17:05.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Instructors\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instructors\\Create.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Instructors\\Create.cshtml",
+              "RelativeToolTip": "Views\\Instructors\\Create.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAUwDoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T18:51:19.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Instructors\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instructors\\Details.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Instructors\\Details.cshtml",
+              "RelativeToolTip": "Views\\Instructors\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T18:20:39.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AssignedCourseData.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\SchoolViewModels\\AssignedCourseData.cs",
+              "RelativeDocumentMoniker": "Models\\SchoolViewModels\\AssignedCourseData.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\SchoolViewModels\\AssignedCourseData.cs",
+              "RelativeToolTip": "Models\\SchoolViewModels\\AssignedCourseData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T17:23:26.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InstructorsController.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Controllers\\InstructorsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InstructorsController.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Controllers\\InstructorsController.cs",
+              "RelativeToolTip": "Controllers\\InstructorsController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAjwHQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T13:41:30.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Instructors\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instructors\\Edit.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Instructors\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Instructors\\Edit.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T16:24:59.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CoursesController.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAwwKQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T13:30:44.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Courses\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Courses\\Details.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Courses\\Details.cshtml",
+              "RelativeToolTip": "Views\\Courses\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T13:35:27.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Models\\Department.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\Department.cs",
+              "RelativeToolTip": "Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:51:50.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentsController.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAYwG8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T20:08:58.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Instructor.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\Instructor.cs",
+              "RelativeDocumentMoniker": "Models\\Instructor.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\Instructor.cs",
+              "RelativeToolTip": "Models\\Instructor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:39:34.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Courses\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Courses\\Delete.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Courses\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Courses\\Delete.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T15:58:28.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OfficeAssignment.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\OfficeAssignment.cs",
+              "RelativeDocumentMoniker": "Models\\OfficeAssignment.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\OfficeAssignment.cs",
+              "RelativeToolTip": "Models\\OfficeAssignment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:45:19.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:43:09.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Courses\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Courses\\Index.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Courses\\Index.cshtml",
+              "RelativeToolTip": "Views\\Courses\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T13:32:52.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Courses\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Courses\\Edit.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Courses\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Courses\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T15:53:16.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "InstructorIndexData.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\SchoolViewModels\\InstructorIndexData.cs",
+              "RelativeDocumentMoniker": "Models\\SchoolViewModels\\InstructorIndexData.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\SchoolViewModels\\InstructorIndexData.cs",
+              "RelativeToolTip": "Models\\SchoolViewModels\\InstructorIndexData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T13:40:00.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:43:54.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Courses\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Courses\\Create.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Courses\\Create.cshtml",
+              "RelativeToolTip": "Views\\Courses\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T14:55:58.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Instructors\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Instructors\\Index.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Instructors\\Index.cshtml",
+              "RelativeToolTip": "Views\\Instructors\\Index.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAD4v3gAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T14:02:53.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Students\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Students\\Index.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Students\\Index.cshtml",
+              "RelativeToolTip": "Views\\Students\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T09:12:05.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CourseAssignment.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\CourseAssignment.cs",
+              "RelativeDocumentMoniker": "Models\\CourseAssignment.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\CourseAssignment.cs",
+              "RelativeToolTip": "Models\\CourseAssignment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:57:09.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SchoolContext.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Data\\SchoolContext.cs",
+              "RelativeDocumentMoniker": "Data\\SchoolContext.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Data\\SchoolContext.cs",
+              "RelativeToolTip": "Data\\SchoolContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwB8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:51:11.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Data\\DbInitializer.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "Data\\DbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T20:01:35.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\Enrollment.cs",
+              "RelativeDocumentMoniker": "Models\\Enrollment.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\Enrollment.cs",
+              "RelativeToolTip": "Models\\Enrollment.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAEwBAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:43:31.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-07T19:55:12.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20250908115826_InitialCreate.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Migrations\\20250908115826_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250908115826_InitialCreate.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Migrations\\20250908115826_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20250908115826_InitialCreate.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwCIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T11:58:49.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T11:46:55.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAiwCQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T11:42:06.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EnrollmentDateGroup.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\SchoolViewModels\\EnrollmentDateGroup.cs",
+              "RelativeDocumentMoniker": "Models\\SchoolViewModels\\EnrollmentDateGroup.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Models\\SchoolViewModels\\EnrollmentDateGroup.cs",
+              "RelativeToolTip": "Models\\SchoolViewModels\\EnrollmentDateGroup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T11:41:11.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Students\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Students\\Create.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Students\\Create.cshtml",
+              "RelativeToolTip": "Views\\Students\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T11:29:14.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PaginatedList.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\PaginatedList.cs",
+              "RelativeDocumentMoniker": "PaginatedList.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\PaginatedList.cs",
+              "RelativeToolTip": "PaginatedList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T09:39:56.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T19:54:09.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T08:14:29.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Students\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Students\\Details.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Students\\Details.cshtml",
+              "RelativeToolTip": "Views\\Students\\Details.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwCAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-08T08:14:41.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ContosoUniversity",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\ContosoUniversity.csproj",
+              "RelativeDocumentMoniker": "ContosoUniversity.csproj",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\ContosoUniversity.csproj",
+              "RelativeToolTip": "ContosoUniversity.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-07T19:40:36.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "bootstrap.css",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "RelativeDocumentMoniker": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "RelativeToolTip": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-07T19:34:36.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-07T19:28:34.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\ContosoUniversity\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAB8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-07T19:22:07.083Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
