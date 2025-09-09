@@ -1,0 +1,3 @@
+- Use VS 2022 to open the project
+- Provide a valid connection string in appsettings.json
+- Once you run the project it should create a database and populate it with seed data

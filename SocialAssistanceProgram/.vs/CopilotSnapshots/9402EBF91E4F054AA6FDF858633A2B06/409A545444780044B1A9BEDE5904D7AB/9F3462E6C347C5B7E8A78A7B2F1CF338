@@ -1,0 +1,42 @@
+﻿using SocialAssistanceProgram.Infrastructure.Data;
+using SocialAssistanceProgram.Core.Domain.Models;
+
+namespace SocialAssistanceProgram.Infrastructure;
+
+public static class DbInitializer
+{
+    public static void Initialize(ApplicationDbContext context)
+    {
+        // Ensure the database is created
+        context.Database.EnsureCreated();
+
+        // Seed Gender data
+        SeedGenders(context);
+    }
+
+    private static void SeedGenders(ApplicationDbContext context)
+    {
+        // Check if Genders already exist
+        if (context.Genders.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Seed Gender data
+        var genders = new Gender[]
+        {
+            new Gender("Male"),
+            new Gender("Female"),
+            new Gender("Other"),
+            new Gender("Prefer not to say")
+        };
+
+        foreach (Gender gender in genders)
+        {
+            context.Genders.Add(gender);
+        }
+
+        context.SaveChanges();
+    }
+}
+

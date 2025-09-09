@@ -1,0 +1,117 @@
+﻿using SocialAssistanceProgram.Infrastructure.Data;
+using SocialAssistanceProgram.Core.Domain.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Reflection;
+
+namespace SocialAssistanceProgram.Infrastructure;
+
+public static class DbInitializer
+{
+    public static void Initialize(ApplicationDbContext context)
+    {
+        // Ensure the database is created
+        context.Database.EnsureCreated();
+
+        // Seed Gender data
+        SeedGenders(context);
+
+        // Seed MaritalStatus data
+        SeedMaritalStatuses(context);
+
+        // Seed OfficerDesignation data
+        SeedOfficerDesignations(context);
+    }
+
+    private static void SeedGenders(ApplicationDbContext context)
+    {
+        // Check if Genders already exist
+        if (context.Genders.Any())
+        {
+            return; // DB has been seeded
+        }
+
+        var genderData = new[]
+        {
+            new { Id = 1, Name = "Male" },
+            new { Id = 2, Name = "Female" },
+            new { Id = 3, Name = "Other" }
+        };
+
+        foreach (var data in genderData)
+        {
+            var gender = CreateEntity<Gender>(data.Id, data.Name);
+            context.Genders.Add(gender);
+        }
+
+        context.SaveChanges();
+    }
+
+    private static void SeedMaritalStatuses(ApplicationDbContext context)
+    {
+        // Check if MaritalStatuses already exist
+        if (context.MaritalStatuses.Any())
+        {
+            return; // DB has been seeded
+        }
+
+        var maritalStatusData = new[]
+        {
+            new { Id = 1, Name = "Single" },
+            new { Id = 2, Name = "Married" },
+            new { Id = 3, Name = "Divorced" },
+            new { Id = 4, Name = "Widowed" },
+            new { Id = 5, Name = "Separated" }
+        };
+
+        foreach (var data in maritalStatusData)
+        {
+            var maritalStatus = CreateEntity<MaritalStatus>(data.Id, data.Name);
+            context.MaritalStatuses.Add(maritalStatus);
+        }
+
+        context.SaveChanges();
+    }
+
+    private static void SeedOfficerDesignations(ApplicationDbContext context)
+    {
+        // Check if OfficerDesignations already exist
+        if (context.OfficerDesignations.Any())
+        {
+            return; // DB has been seeded
+        }
+
+        var designationData = new[]
+        {
+            new { Id = 1, Name = "Chief Officer" },
+            new { Id = 2, Name = "Assistant Chief Officer" },
+            new { Id = 3, Name = "Social Development Officer" },
+            new { Id = 4, Name = "Assistant Social Development Officer" },
+            new { Id = 5, Name = "Community Development Officer" },
+            new { Id = 6, Name = "Assistant Community Development Officer" },
+            new { Id = 7, Name = "Field Officer" },
+            new { Id = 8, Name = "Social Worker" }
+        };
+
+        foreach (var data in designationData)
+        {
+            var designation = CreateEntity<OfficerDesignation>(data.Id, data.Name);
+            context.OfficerDesignations.Add(designation);
+        }
+
+        context.SaveChanges();
+    }
+
+    private static T CreateEntity<T>(int id, string name) where T : class, new()
+    {
+        var entity = new T();
+        var idProperty = typeof(T).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance);
+        var nameProperty = typeof(T).GetProperty("Name", BindingFlags.Public | BindingFlags.Instance);
+
+        // Use reflection to set the private setters
+        idProperty?.SetValue(entity, id);
+        nameProperty?.SetValue(entity, name);
+
+        return entity;
+    }
+}
+

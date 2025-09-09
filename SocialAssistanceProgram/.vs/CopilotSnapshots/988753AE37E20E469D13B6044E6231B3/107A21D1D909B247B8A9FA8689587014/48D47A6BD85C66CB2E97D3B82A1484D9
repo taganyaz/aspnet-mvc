@@ -1,0 +1,105 @@
+﻿using SocialAssistanceProgram.Infrastructure.Data;
+using SocialAssistanceProgram.Core.Domain.Models;
+
+namespace SocialAssistanceProgram.Infrastructure;
+
+public static class DbInitializer
+{
+    public static void Initialize(ApplicationDbContext context)
+    {
+        // Ensure the database is created
+        context.Database.EnsureCreated();
+
+        // Seed Gender data
+        SeedGenders(context);
+
+        // Seed MaritalStatus data
+        SeedMaritalStatuses(context);
+
+        // Seed OfficerDesignation data
+        SeedOfficerDesignations(context);
+    }
+
+    private static void SeedGenders(ApplicationDbContext context)
+    {
+        // Check if Genders already exist
+        if (context.Genders.Any())
+        {
+            return; // DB has been seeded
+        }
+
+        var genders = new[]
+        {
+            new { Id = 1, Name = "Male" },
+            new { Id = 2, Name = "Female" },
+            new { Id = 3, Name = "Other" }
+        };
+
+        foreach (var gender in genders)
+        {
+            context.Database.ExecuteSqlRaw(
+                "INSERT INTO Genders (Id, Name) VALUES ({0}, {1})",
+                gender.Id, gender.Name);
+        }
+
+        context.SaveChanges();
+    }
+
+    private static void SeedMaritalStatuses(ApplicationDbContext context)
+    {
+        // Check if MaritalStatuses already exist
+        if (context.MaritalStatuses.Any())
+        {
+            return; // DB has been seeded
+        }
+
+        var maritalStatuses = new[]
+        {
+            new { Id = 1, Name = "Single" },
+            new { Id = 2, Name = "Married" },
+            new { Id = 3, Name = "Divorced" },
+            new { Id = 4, Name = "Widowed" },
+            new { Id = 5, Name = "Separated" }
+        };
+
+        foreach (var status in maritalStatuses)
+        {
+            context.Database.ExecuteSqlRaw(
+                "INSERT INTO MaritalStatuses (Id, Name) VALUES ({0}, {1})",
+                status.Id, status.Name);
+        }
+
+        context.SaveChanges();
+    }
+
+    private static void SeedOfficerDesignations(ApplicationDbContext context)
+    {
+        // Check if OfficerDesignations already exist
+        if (context.OfficerDesignations.Any())
+        {
+            return; // DB has been seeded
+        }
+
+        var designations = new[]
+        {
+            new { Id = 1, Name = "Chief Officer" },
+            new { Id = 2, Name = "Assistant Chief Officer" },
+            new { Id = 3, Name = "Social Development Officer" },
+            new { Id = 4, Name = "Assistant Social Development Officer" },
+            new { Id = 5, Name = "Community Development Officer" },
+            new { Id = 6, Name = "Assistant Community Development Officer" },
+            new { Id = 7, Name = "Field Officer" },
+            new { Id = 8, Name = "Social Worker" }
+        };
+
+        foreach (var designation in designations)
+        {
+            context.Database.ExecuteSqlRaw(
+                "INSERT INTO OfficerDesignations (Id, Name) VALUES ({0}, {1})",
+                designation.Id, designation.Name);
+        }
+
+        context.SaveChanges();
+    }
+}
+

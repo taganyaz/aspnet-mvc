@@ -1,0 +1,111 @@
+﻿@using SocialAssistanceProgram.ViewModels
+@model EditApplicantViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Applicant</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="ApplicationDate" class="control-label"></label>
+                <input asp-for="ApplicationDate" class="form-control" />
+                <span asp-validation-for="ApplicationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MiddleName" class="control-label"></label>
+                <input asp-for="MiddleName" class="form-control" />
+                <span asp-validation-for="MiddleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOfBirth" class="control-label"></label>
+                <input asp-for="DateOfBirth" class="form-control" />
+                <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GenderId" class="control-label"></label>
+                <select asp-for="GenderId" class="form-control" asp-items="ViewBag.GenderId">
+                    <option value="">-- Select Gender --</option>
+                </select>
+                <span asp-validation-for="GenderId" class="text-danger">
+                </span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaritalStatusId" class="control-label"></label>
+                <select asp-for="MaritalStatusId" class="form-control" asp-items="ViewBag.MaritalStatusId">
+                    <option value="">-- Select Marital Status --</option>
+                </select>
+                <span asp-validation-for="MaritalStatusId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdNumber" class="control-label"></label>
+                <input asp-for="IdNumber" class="form-control" />
+                <span asp-validation-for="IdNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PostalAddress" class="control-label"></label>
+                <input asp-for="PostalAddress" class="form-control" />
+                <span asp-validation-for="PostalAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhysicalAddress" class="control-label"></label>
+                <input asp-for="PhysicalAddress" class="form-control" />
+                <span asp-validation-for="PhysicalAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SocialProgramId" class="control-label"></label>
+                <select asp-for="SocialProgramId" class="form-control" asp-items="ViewBag.SocialProgramId">
+                    <option value="">-- Select Social Program --</option>
+                </select>
+                <span asp-validation-for="SocialProgramId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VillageId" class="control-label"></label>
+                <select asp-for="VillageId" class="form-control" asp-items="ViewBag.VillageId">
+                    <option value="">-- Select Village --</option>
+                </select>
+                <span asp-validation-for="VillageId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OfficerId" class="control-label"></label>
+                <select asp-for="OfficerId" class="form-control" asp-items="ViewBag.OfficerId">
+                    <option value="">-- Select Officer --</option>
+                </select>
+                <span asp-validation-for="OfficerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SignedDate" class="control-label"></label>
+                <input asp-for="SignedDate" class="form-control" />
+                <span asp-validation-for="SignedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

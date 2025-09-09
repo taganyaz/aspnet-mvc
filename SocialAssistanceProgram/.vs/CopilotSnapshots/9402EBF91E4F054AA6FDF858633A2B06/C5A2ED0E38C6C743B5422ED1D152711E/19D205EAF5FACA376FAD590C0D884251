@@ -1,0 +1,13 @@
+﻿using SocialAssistanceProgram.Infrastructure.Data;
+
+namespace SocialAssistanceProgram.Infrastructure;
+
+public static class DbInitializer
+{
+    public static void Initialize(ApplicationDbContext context)
+    {
+        // Ensure the database is created
+        context.Database.EnsureCreated();
+    }
+}
+

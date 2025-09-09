@@ -1,0 +1,102 @@
+﻿using SocialAssistanceProgram.Infrastructure.Data;
+using SocialAssistanceProgram.Core.Domain.Models;
+
+namespace SocialAssistanceProgram.Infrastructure;
+
+public static class DbInitializer
+{
+    public static void Initialize(ApplicationDbContext context)
+    {
+        // Ensure the database is created
+        context.Database.EnsureCreated();
+
+        // Seed data for all entities
+        SeedGenders(context);
+        SeedMaritalStatuses(context);
+        SeedOfficerDesignations(context);
+    }
+
+    private static void SeedGenders(ApplicationDbContext context)
+    {
+        // Check if Genders already exist
+        if (context.Genders.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Seed Gender data
+        var genders = new Gender[]
+        {
+            new Gender("Male"),
+            new Gender("Female"),
+            new Gender("Other"),
+            new Gender("Prefer not to say")
+        };
+
+        foreach (Gender gender in genders)
+        {
+            context.Genders.Add(gender);
+        }
+
+        context.SaveChanges();
+    }
+
+    private static void SeedMaritalStatuses(ApplicationDbContext context)
+    {
+        // Check if MaritalStatuses already exist
+        if (context.MaritalStatuses.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Seed MaritalStatus data
+        var maritalStatuses = new MaritalStatus[]
+        {
+            new MaritalStatus("Single"),
+            new MaritalStatus("Married"),
+            new MaritalStatus("Divorced"),
+            new MaritalStatus("Widowed"),
+            new MaritalStatus("Separated"),
+            new MaritalStatus("Cohabiting")
+        };
+
+        foreach (MaritalStatus maritalStatus in maritalStatuses)
+        {
+            context.MaritalStatuses.Add(maritalStatus);
+        }
+
+        context.SaveChanges();
+    }
+
+    private static void SeedOfficerDesignations(ApplicationDbContext context)
+    {
+        // Check if OfficerDesignations already exist
+        if (context.OfficerDesignations.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Seed OfficerDesignation data
+        var officerDesignations = new OfficerDesignation[]
+        {
+            new OfficerDesignation("Social Worker"),
+            new OfficerDesignation("Program Officer"),
+            new OfficerDesignation("Case Manager"),
+            new OfficerDesignation("Field Officer"),
+            new OfficerDesignation("Assistant Social Worker"),
+            new OfficerDesignation("Senior Social Worker"),
+            new OfficerDesignation("Program Coordinator"),
+            new OfficerDesignation("Community Liaison Officer"),
+            new OfficerDesignation("Benefits Advisor"),
+            new OfficerDesignation("Supervisor")
+        };
+
+        foreach (OfficerDesignation designation in officerDesignations)
+        {
+            context.OfficerDesignations.Add(designation);
+        }
+
+        context.SaveChanges();
+    }
+}
+
