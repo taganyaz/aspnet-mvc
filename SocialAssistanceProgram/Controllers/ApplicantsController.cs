@@ -148,9 +148,49 @@ namespace SocialAssistanceProgram.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ApplicantExists(int id)
+        // AJAX endpoints for cascading dropdowns
+        [HttpGet]
+        public async Task<IActionResult> GetSubCounties(int countyId)
         {
-            return _context.Applicant.Any(e => e.Id == id);
+            var subCounties = await _context.Set<SubCounty>()
+                .Where(sc => sc.CountyId == countyId)
+                .Select(sc => new { value = sc.Id, text = sc.Name })
+                .ToListAsync();
+
+            return Json(subCounties);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetLocations(int subCountyId)
+        {
+            var locations = await _context.Set<Location>()
+                .Where(l => l.SubCountyId == subCountyId)
+                .Select(l => new { value = l.Id, text = l.Name })
+                .ToListAsync();
+
+            return Json(locations);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetSubLocations(int locationId)
+        {
+            var subLocations = await _context.Set<SubLocation>()
+                .Where(sl => sl.LocationId == locationId)
+                .Select(sl => new { value = sl.Id, text = sl.Name })
+                .ToListAsync();
+
+            return Json(subLocations);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetVillages(int subLocationId)
+        {
+            var villages = await _context.Set<Village>()
+                .Where(v => v.SubLocationId == subLocationId)
+                .Select(v => new { value = v.Id, text = v.Name })
+                .ToListAsync();
+
+            return Json(villages);
         }
 
         private void PopulateDropDowns(ApplicantDto? applicant)
@@ -161,7 +201,11 @@ namespace SocialAssistanceProgram.Controllers
             ViewData["SocialProgramId"] = new SelectList(_context.Set<SocialProgram>(), "Id", "Name", applicant?.SocialProgramId);
             ViewData["VillageId"] = new SelectList(_context.Set<Village>(), "Id", "Name", applicant?.VillageId);
 
-            ViewData["CountyId"] = new SelectList(_context.Set<County>(), "Id", "Name", null);
+            ViewData["CountyId"] = new SelectList(_context.Set<County>(), "Id", "Name", applicant?.CountyId);
+            ViewData["SubCountyId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name", applicant?.SubCountyId);
+            ViewData["LocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name", applicant?.LocationId);
+            ViewData["SubLocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name", applicant?.SubLocationId);
+            ViewData["VillageId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name", applicant?.VillageId);
         }
     }
 }

@@ -74,16 +74,39 @@
 
             <div class="form-group">
                 <label asp-for="CountyId" class="control-label"></label>
-                <select asp-for="CountyId" class="form-control" asp-items="ViewBag.CountyId">
+                <select asp-for="CountyId" class="form-control" asp-items="ViewBag.CountyId" id="countySelect">
                     <option value="">-- Select County --</option>
                 </select>
             </div>
+
+            <div class="form-group">
+                <label asp-for="SubCountyId" class="control-label"></label>
+                <select asp-for="SubCountyId" class="form-control" asp-items="ViewBag.SubCountyId" id="subCountySelect">
+                    <option value="">-- Select Sub County --</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LocationId" class="control-label"></label>
+                <select asp-for="LocationId" class="form-control" asp-items="ViewBag.LocationId" id="locationSelect">
+                    <option value="">-- Select Location --</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SubLocationId" class="control-label"></label>
+                <select asp-for="SubLocationId" class="form-control" asp-items="ViewBag.SubLocationId" id="subLocationSelect">
+                    <option value="">-- Select Sub Location --</option>
+                </select>
+            </div>
+
             <div class="form-group">
                 <label asp-for="VillageId" class="control-label"></label>
-                <select asp-for="VillageId" class ="form-control" asp-items="ViewBag.VillageId">
+                <select asp-for="VillageId" class="form-control" asp-items="ViewBag.VillageId" id="villageSelect">
                     <option value="">-- Select Village --</option>
                 </select>
             </div>
+
             <div class="form-group">
                 <label asp-for="OfficerId" class="control-label"></label>
                 <select asp-for="OfficerId" class ="form-control" asp-items="ViewBag.OfficerId">
@@ -108,4 +131,126 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Function to clear and reset a dropdown
+            function clearDropdown(selectElement, defaultText) {
+                selectElement.empty();
+                selectElement.append('<option value="">' + defaultText + '</option>');
+            }
+
+            // Function to populate dropdown from AJAX response
+            function populateDropdown(selectElement, data, defaultText) {
+                clearDropdown(selectElement, defaultText);
+                $.each(data, function (index, item) {
+                    selectElement.append('<option value="' + item.value + '">' + item.text + '</option>');
+                });
+            }
+
+            // County change event
+            $('#countySelect').change(function () {
+                var countyId = $(this).val();
+                var subCountySelect = $('#subCountySelect');
+                var locationSelect = $('#locationSelect');
+                var subLocationSelect = $('#subLocationSelect');
+                var villageSelect = $('#villageSelect');
+
+                // Clear all dependent dropdowns
+                clearDropdown(subCountySelect, '-- Select Sub County --');
+                clearDropdown(locationSelect, '-- Select Location --');
+                clearDropdown(subLocationSelect, '-- Select Sub Location --');
+                clearDropdown(villageSelect, '-- Select Village --');
+
+                if (countyId) {
+                    $.ajax({
+                        url: '@Url.Action("GetSubCounties", "Applicants")',
+                        type: 'GET',
+                        data: { countyId: countyId },
+                        success: function (data) {
+                            populateDropdown(subCountySelect, data, '-- Select Sub County --');
+                        },
+                        error: function () {
+                            alert('Error loading sub counties');
+                        }
+                    });
+                }
+            });
+
+            // Sub County change event
+            $('#subCountySelect').change(function () {
+                var subCountyId = $(this).val();
+                var locationSelect = $('#locationSelect');
+                var subLocationSelect = $('#subLocationSelect');
+                var villageSelect = $('#villageSelect');
+
+                // Clear dependent dropdowns
+                clearDropdown(locationSelect, '-- Select Location --');
+                clearDropdown(subLocationSelect, '-- Select Sub Location --');
+                clearDropdown(villageSelect, '-- Select Village --');
+
+                if (subCountyId) {
+                    $.ajax({
+                        url: '@Url.Action("GetLocations", "Applicants")',
+                        type: 'GET',
+                        data: { subCountyId: subCountyId },
+                        success: function (data) {
+                            populateDropdown(locationSelect, data, '-- Select Location --');
+                        },
+                        error: function () {
+                            alert('Error loading locations');
+                        }
+                    });
+                }
+            });
+
+            // Location change event
+            $('#locationSelect').change(function () {
+                var locationId = $(this).val();
+                var subLocationSelect = $('#subLocationSelect');
+                var villageSelect = $('#villageSelect');
+
+                // Clear dependent dropdowns
+                clearDropdown(subLocationSelect, '-- Select Sub Location --');
+                clearDropdown(villageSelect, '-- Select Village --');
+
+                if (locationId) {
+                    $.ajax({
+                        url: '@Url.Action("GetSubLocations", "Applicants")',
+                        type: 'GET',
+                        data: { locationId: locationId },
+                        success: function (data) {
+                            populateDropdown(subLocationSelect, data, '-- Select Sub Location --');
+                        },
+                        error: function () {
+                            alert('Error loading sub locations');
+                        }
+                    });
+                }
+            });
+
+            // Sub Location change event
+            $('#subLocationSelect').change(function () {
+                var subLocationId = $(this).val();
+                var villageSelect = $('#villageSelect');
+
+                // Clear village dropdown
+                clearDropdown(villageSelect, '-- Select Village --');
+
+                if (subLocationId) {
+                    $.ajax({
+                        url: '@Url.Action("GetVillages", "Applicants")',
+                        type: 'GET',
+                        data: { subLocationId: subLocationId },
+                        success: function (data) {
+                            populateDropdown(villageSelect, data, '-- Select Village --');
+                        },
+                        error: function () {
+                            alert('Error loading villages');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 }

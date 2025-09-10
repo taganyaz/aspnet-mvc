@@ -1,4 +1,6 @@
-﻿namespace SocialAssistanceProgram.Core.Application.DTOs;
+﻿using System.ComponentModel;
+
+namespace SocialAssistanceProgram.Core.Application.DTOs;
 
 public class ApplicantDto
 {
@@ -16,6 +18,18 @@ public class ApplicantDto
     public int SocialProgramId { get;  set; }
 
     public readonly List<PhoneContactDto> PhoneContacts = new();
+
+    [DisplayName("County")]
+    public int? CountyId { get; set; }
+
+    [DisplayName("Sub County")]
+    public int? SubCountyId { get; set; }
+
+    [DisplayName("Location")]
+    public int? LocationId { get; set; }
+
+    [DisplayName("Sub Location")]
+    public int? SubLocationId { get; set; }
     public int VillageId { get;  set; }
     public int OfficerId { get;  set; }
     public DateOnly SignedDate { get;  set; }

@@ -36,6 +36,11 @@ public class ApplicantRepository : IApplicantRepository
     public Task<Applicant?> GetByIdAsync(int id)
     {
         return _context.Applicant
+            .Include(a => a.Village)
+                .ThenInclude(v => v!.SubLocation)
+                    .ThenInclude(sl => sl!.Location)
+                        .ThenInclude(l => l!.SubCounty)
+                            .ThenInclude(sc => sc!.County)
         .FirstOrDefaultAsync(a => a.Id == id);
     }
 
