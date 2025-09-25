@@ -1,140 +1,140 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\",
+  "WorkspaceRootPath": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\application\\services\\applicantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\application\\services\\applicantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\infrastructure\\repositories\\applicantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:infrastructure\\repositories\\applicantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\application\\interfaces\\iapplicantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\application\\interfaces\\iapplicantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\controllers\\applicantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:controllers\\applicantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\views\\applicants\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:views\\applicants\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\views\\applicants\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:views\\applicants\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\application\\dtos\\applicantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\application\\dtos\\applicantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\viewmodels\\createapplicantviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:viewmodels\\createapplicantviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\views\\applicants\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:views\\applicants\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\views\\applicants\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:views\\applicants\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\viewmodels\\editapplicantviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:viewmodels\\editapplicantviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\mappings\\webmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:mappings\\webmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\views\\applicants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:views\\applicants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\domain\\interfaces\\iapplicantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\interfaces\\iapplicantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\domain\\models\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\domain\\models\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\models\\applicant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\domain\\models\\phonecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\controllers\\applicantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:controllers\\applicantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\mappings\\webmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:mappings\\webmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\viewmodels\\createapplicantviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:viewmodels\\createapplicantviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\infrastructure\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:infrastructure\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\domain\\models\\phonecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\models\\phonecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\application\\dtos\\phonecontactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\application\\dtos\\phonecontactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\application\\services\\applicantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\application\\services\\applicantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\domain\\models\\officer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\application\\interfaces\\iapplicantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\application\\interfaces\\iapplicantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\domain\\interfaces\\iapplicantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\interfaces\\iapplicantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\views\\applicants\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:views\\applicants\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\views\\applicants\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:views\\applicants\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\views\\applicants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:views\\applicants\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\migrations\\20250925204839_applicant_model_property_settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:migrations\\20250925204839_applicant_model_property_settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\viewmodels\\editapplicantviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:viewmodels\\editapplicantviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\infrastructure\\repositories\\applicantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:infrastructure\\repositories\\applicantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\domain\\models\\village.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\models\\village.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\views\\applicants\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:views\\applicants\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\views\\applicants\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:views\\applicants\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\domain\\models\\officer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\models\\officer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SAPDB/True/SqlTable/dbo.Counties.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\infrastructure\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:infrastructure\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\domain\\models\\village.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\models\\village.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\domain\\models\\sublocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\domain\\models\\sublocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\models\\sublocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\domain\\models\\subcounty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\domain\\models\\subcounty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\models\\subcounty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\domain\\models\\socialprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\domain\\models\\socialprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\models\\socialprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\domain\\models\\officerdesignation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\domain\\models\\officerdesignation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\models\\officerdesignation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\domain\\models\\maritalstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\domain\\models\\maritalstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\models\\maritalstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\domain\\models\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\domain\\models\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\models\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\domain\\models\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\domain\\models\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\models\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\core\\domain\\models\\county.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\core\\domain\\models\\county.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:core\\domain\\models\\county.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|d:\\data\\learn\\asp.net mvc\\socialassistanceprogram\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|c:\\data\\src\\learn\\.net\\aspnet-mvc\\socialassistanceprogram\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F0AD4344-416C-4A0F-824D-2A10F95865FB}|SocialAssistanceProgram.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -145,92 +145,279 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Applicant.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\Applicant.cs",
+              "RelativeDocumentMoniker": "Core\\Domain\\Models\\Applicant.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\Applicant.cs",
+              "RelativeToolTip": "Core\\Domain\\Models\\Applicant.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAYwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T11:36:13.168Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ApplicantsController.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Controllers\\ApplicantsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ApplicantsController.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Controllers\\ApplicantsController.cs",
-              "RelativeToolTip": "Controllers\\ApplicantsController.cs",
-              "ViewState": "AgIAALkAAAAAAAAAAAA8wM8AAAB7AAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "PhoneContact.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\PhoneContact.cs",
+              "RelativeDocumentMoniker": "Core\\Domain\\Models\\PhoneContact.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\PhoneContact.cs",
+              "RelativeToolTip": "Core\\Domain\\Models\\PhoneContact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T12:02:15.739Z"
+              "WhenOpened": "2025-09-09T11:42:47.35Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Views\\Applicants\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Applicants\\Edit.cshtml",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Views\\Applicants\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Applicants\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-09T14:22:03.409Z"
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T12:17:22.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Infrastructure\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\DbInitializer.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Infrastructure\\DbInitializer.cs",
+              "RelativeToolTip": "Infrastructure\\DbInitializer.cs",
+              "ViewState": "AgIAABUBAAAAAAAAAAAAAH0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T12:12:58.116Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IApplicantService.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Application\\Interfaces\\IApplicantService.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\Interfaces\\IApplicantService.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Application\\Interfaces\\IApplicantService.cs",
-              "RelativeToolTip": "Core\\Application\\Interfaces\\IApplicantService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Title": "CreateApplicantViewModel.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\ViewModels\\CreateApplicantViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\CreateApplicantViewModel.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\ViewModels\\CreateApplicantViewModel.cs",
+              "RelativeToolTip": "ViewModels\\CreateApplicantViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T13:27:36.768Z"
+              "WhenOpened": "2025-09-09T14:06:04.806Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ApplicantService.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Application\\Services\\ApplicantService.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\Services\\ApplicantService.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Application\\Services\\ApplicantService.cs",
-              "RelativeToolTip": "Core\\Application\\Services\\ApplicantService.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAA3wGIAAAAFAAAAAAAAAA==",
+              "Title": "WebMappingProfile.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Mappings\\WebMappingProfile.cs",
+              "RelativeDocumentMoniker": "Mappings\\WebMappingProfile.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Mappings\\WebMappingProfile.cs",
+              "RelativeToolTip": "Mappings\\WebMappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T13:32:41.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApplicantRepository.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Infrastructure\\Repositories\\ApplicantRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\ApplicantRepository.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Infrastructure\\Repositories\\ApplicantRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\ApplicantRepository.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAawCoAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T13:47:28.629Z"
+              "WhenOpened": "2025-09-09T14:11:38.856Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ApplicantsController.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Controllers\\ApplicantsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApplicantsController.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Controllers\\ApplicantsController.cs",
+              "RelativeToolTip": "Controllers\\ApplicantsController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T12:02:15.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T12:02:50.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicantService.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Application\\Services\\ApplicantService.cs",
+              "RelativeDocumentMoniker": "Core\\Application\\Services\\ApplicantService.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Application\\Services\\ApplicantService.cs",
+              "RelativeToolTip": "Core\\Application\\Services\\ApplicantService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T13:32:41.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "MappingProfile.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Application\\Mappings\\MappingProfile.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Application\\Mappings\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Core\\Application\\Mappings\\MappingProfile.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Application\\Mappings\\MappingProfile.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Application\\Mappings\\MappingProfile.cs",
               "RelativeToolTip": "Core\\Application\\Mappings\\MappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-09T13:45:45.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
+              "Title": "IApplicantService.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Application\\Interfaces\\IApplicantService.cs",
+              "RelativeDocumentMoniker": "Core\\Application\\Interfaces\\IApplicantService.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Application\\Interfaces\\IApplicantService.cs",
+              "RelativeToolTip": "Core\\Application\\Interfaces\\IApplicantService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T13:27:36.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IApplicantRepository.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Interfaces\\IApplicantRepository.cs",
+              "RelativeDocumentMoniker": "Core\\Domain\\Interfaces\\IApplicantRepository.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Interfaces\\IApplicantRepository.cs",
+              "RelativeToolTip": "Core\\Domain\\Interfaces\\IApplicantRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T13:26:33.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Views\\Applicants\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Applicants\\Details.cshtml",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Views\\Applicants\\Details.cshtml",
+              "RelativeToolTip": "Views\\Applicants\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T14:31:11.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20250925204839_Applicant_model_property_settings.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Migrations\\20250925204839_Applicant_model_property_settings.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250925204839_Applicant_model_property_settings.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Migrations\\20250925204839_Applicant_model_property_settings.cs",
+              "RelativeToolTip": "Migrations\\20250925204839_Applicant_model_property_settings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:48:39.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Views\\Applicants\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Applicants\\Index.cshtml",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Views\\Applicants\\Index.cshtml",
+              "RelativeToolTip": "Views\\Applicants\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T12:09:36.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Views\\Applicants\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Applicants\\Delete.cshtml",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Views\\Applicants\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Applicants\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T14:30:22.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EditApplicantViewModel.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\ViewModels\\EditApplicantViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\EditApplicantViewModel.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\ViewModels\\EditApplicantViewModel.cs",
+              "RelativeToolTip": "ViewModels\\EditApplicantViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T14:10:51.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:19:41.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApplicantRepository.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Infrastructure\\Repositories\\ApplicantRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\ApplicantRepository.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Infrastructure\\Repositories\\ApplicantRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\ApplicantRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T13:47:28.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Village.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\Village.cs",
+              "RelativeDocumentMoniker": "Core\\Domain\\Models\\Village.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\Village.cs",
+              "RelativeToolTip": "Core\\Domain\\Models\\Village.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T11:56:10.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\appsettings.json",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\appsettings.json",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -239,11 +426,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 21,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Views\\Applicants\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Applicants\\Edit.cshtml",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Views\\Applicants\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Applicants\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T14:22:03.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Views\\Applicants\\Create.cshtml",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Views\\Applicants\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Applicants\\Create.cshtml",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Views\\Applicants\\Create.cshtml",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Views\\Applicants\\Create.cshtml",
               "RelativeToolTip": "Views\\Applicants\\Create.cshtml",
               "ViewState": "AgIAAHAAAAAAAAAAAAAAAIMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -251,163 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ApplicantDto.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Application\\DTOs\\ApplicantDto.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\DTOs\\ApplicantDto.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Application\\DTOs\\ApplicantDto.cs",
-              "RelativeToolTip": "Core\\Application\\DTOs\\ApplicantDto.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAywB8AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T13:28:39.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CreateApplicantViewModel.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\ViewModels\\CreateApplicantViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\CreateApplicantViewModel.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\ViewModels\\CreateApplicantViewModel.cs",
-              "RelativeToolTip": "ViewModels\\CreateApplicantViewModel.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAADwv0IAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T14:06:04.806Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Views\\Applicants\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Applicants\\Details.cshtml",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Views\\Applicants\\Details.cshtml",
-              "RelativeToolTip": "Views\\Applicants\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-09T14:31:11.788Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Views\\Applicants\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Applicants\\Delete.cshtml",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Views\\Applicants\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Applicants\\Delete.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAEMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-09T14:30:22.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EditApplicantViewModel.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\ViewModels\\EditApplicantViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\EditApplicantViewModel.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\ViewModels\\EditApplicantViewModel.cs",
-              "RelativeToolTip": "ViewModels\\EditApplicantViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T14:10:51.315Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "WebMappingProfile.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Mappings\\WebMappingProfile.cs",
-              "RelativeDocumentMoniker": "Mappings\\WebMappingProfile.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Mappings\\WebMappingProfile.cs",
-              "RelativeToolTip": "Mappings\\WebMappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T14:11:38.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T12:02:50.834Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Views\\Applicants\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Applicants\\Index.cshtml",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Views\\Applicants\\Index.cshtml",
-              "RelativeToolTip": "Views\\Applicants\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-09T12:09:36.921Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IApplicantRepository.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Interfaces\\IApplicantRepository.cs",
-              "RelativeDocumentMoniker": "Core\\Domain\\Interfaces\\IApplicantRepository.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Interfaces\\IApplicantRepository.cs",
-              "RelativeToolTip": "Core\\Domain\\Interfaces\\IApplicantRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T13:26:33.475Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Applicant.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\Applicant.cs",
-              "RelativeDocumentMoniker": "Core\\Domain\\Models\\Applicant.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\Applicant.cs",
-              "RelativeToolTip": "Core\\Domain\\Models\\Applicant.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAMwEQAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T11:36:13.168Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PhoneContact.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\PhoneContact.cs",
-              "RelativeDocumentMoniker": "Core\\Domain\\Models\\PhoneContact.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\PhoneContact.cs",
-              "RelativeToolTip": "Core\\Domain\\Models\\PhoneContact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T11:42:47.35Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "PhoneContactDto.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Application\\DTOs\\PhoneContactDto.cs",
-              "RelativeDocumentMoniker": "Core\\Application\\DTOs\\PhoneContactDto.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Application\\DTOs\\PhoneContactDto.cs",
-              "RelativeToolTip": "Core\\Application\\DTOs\\PhoneContactDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T13:31:03.861Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "DbInitializer.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Infrastructure\\DbInitializer.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\DbInitializer.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Infrastructure\\DbInitializer.cs",
-              "RelativeToolTip": "Infrastructure\\DbInitializer.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwGUBAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T12:12:58.116Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "dbo.Counties.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SAPDB/True/SqlTable/dbo.Counties.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/SAPDB/True/SqlTable/dbo.Counties.sql",
@@ -418,9 +461,9 @@
               "$type": "Document",
               "DocumentIndex": 26,
               "Title": "SubCounty.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\SubCounty.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\SubCounty.cs",
               "RelativeDocumentMoniker": "Core\\Domain\\Models\\SubCounty.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\SubCounty.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\SubCounty.cs",
               "RelativeToolTip": "Core\\Domain\\Models\\SubCounty.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAswA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -428,23 +471,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAlwBIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T12:17:22.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Officer.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\Officer.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\Officer.cs",
               "RelativeDocumentMoniker": "Core\\Domain\\Models\\Officer.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\Officer.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\Officer.cs",
               "RelativeToolTip": "Core\\Domain\\Models\\Officer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -452,23 +483,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Village.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\Village.cs",
-              "RelativeDocumentMoniker": "Core\\Domain\\Models\\Village.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\Village.cs",
-              "RelativeToolTip": "Core\\Domain\\Models\\Village.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAowA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T11:56:10.5Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 25,
               "Title": "SubLocation.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\SubLocation.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\SubLocation.cs",
               "RelativeDocumentMoniker": "Core\\Domain\\Models\\SubLocation.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\SubLocation.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\SubLocation.cs",
               "RelativeToolTip": "Core\\Domain\\Models\\SubLocation.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -478,9 +497,9 @@
               "$type": "Document",
               "DocumentIndex": 27,
               "Title": "SocialProgram.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\SocialProgram.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\SocialProgram.cs",
               "RelativeDocumentMoniker": "Core\\Domain\\Models\\SocialProgram.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\SocialProgram.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\SocialProgram.cs",
               "RelativeToolTip": "Core\\Domain\\Models\\SocialProgram.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -490,9 +509,9 @@
               "$type": "Document",
               "DocumentIndex": 28,
               "Title": "OfficerDesignation.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\OfficerDesignation.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\OfficerDesignation.cs",
               "RelativeDocumentMoniker": "Core\\Domain\\Models\\OfficerDesignation.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\OfficerDesignation.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\OfficerDesignation.cs",
               "RelativeToolTip": "Core\\Domain\\Models\\OfficerDesignation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -502,9 +521,9 @@
               "$type": "Document",
               "DocumentIndex": 29,
               "Title": "MaritalStatus.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\MaritalStatus.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\MaritalStatus.cs",
               "RelativeDocumentMoniker": "Core\\Domain\\Models\\MaritalStatus.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\MaritalStatus.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\MaritalStatus.cs",
               "RelativeToolTip": "Core\\Domain\\Models\\MaritalStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -514,9 +533,9 @@
               "$type": "Document",
               "DocumentIndex": 30,
               "Title": "Location.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\Location.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\Location.cs",
               "RelativeDocumentMoniker": "Core\\Domain\\Models\\Location.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\Location.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\Location.cs",
               "RelativeToolTip": "Core\\Domain\\Models\\Location.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -526,9 +545,9 @@
               "$type": "Document",
               "DocumentIndex": 31,
               "Title": "Gender.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\Gender.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\Gender.cs",
               "RelativeDocumentMoniker": "Core\\Domain\\Models\\Gender.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\Gender.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\Gender.cs",
               "RelativeToolTip": "Core\\Domain\\Models\\Gender.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -538,9 +557,9 @@
               "$type": "Document",
               "DocumentIndex": 32,
               "Title": "County.cs",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\County.cs",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\County.cs",
               "RelativeDocumentMoniker": "Core\\Domain\\Models\\County.cs",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Core\\Domain\\Models\\County.cs",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Core\\Domain\\Models\\County.cs",
               "RelativeToolTip": "Core\\Domain\\Models\\County.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -550,9 +569,9 @@
               "$type": "Document",
               "DocumentIndex": 33,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Data\\Learn\\Asp.net MVC\\SocialAssistanceProgram\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Data\\Src\\Learn\\.net\\aspnet-mvc\\SocialAssistanceProgram\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

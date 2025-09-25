@@ -1,4 +1,4 @@
-﻿using SocialAssistanceProgram.Core.Application.DTOs;
+﻿using SocialAssistanceProgram.Core.Domain.Models;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -10,18 +10,18 @@ public class CreateApplicantViewModel
     [DisplayName("Application Date")]
     public DateOnly ApplicationDate { get; set; }
 
-    [StringLength(100)]
+    [StringLength(50)]
     [Required]
     [DisplayName("First Name")]
     public string FirstName { get; set; } = string.Empty;
 
-    [StringLength(100)]
+    [StringLength(50)]
     [Required]
     [DisplayName("Middle Name")]
     public string MiddleName { get; set; } = string.Empty;
 
 
-    [StringLength(100)]
+    [StringLength(50)]
     [Required]
     [DisplayName("Last Name")]
     public string LastName { get; set; } = string.Empty;
@@ -52,7 +52,7 @@ public class CreateApplicantViewModel
     [DisplayName("Social Program")]
     public int SocialProgramId { get; set; }
 
-    public readonly List<PhoneContactDto> PhoneContacts = new();
+    public List<PhoneContact> PhoneContacts { get; set; } = new();
 
     [DisplayName("County")]
     public int? CountyId { get; set; }

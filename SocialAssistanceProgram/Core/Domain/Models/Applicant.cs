@@ -1,111 +1,81 @@
-﻿namespace SocialAssistanceProgram.Core.Domain.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SocialAssistanceProgram.Core.Domain.Models;
 
 public class Applicant
 {
-    public int Id { get; private set; }
-    public DateOnly ApplicationDate { get; private set; }
-    public string FirstName { get; private set; } = string.Empty;
-    public string MiddleName { get; private set; } = string.Empty;
-    public string LastName { get; private set; } = string.Empty;
-    public DateOnly DateOfBirth { get; private set; }
-    public int GenderId { get; private set; }
-    public Gender Gender { get; private set; } = null!;
-    public int MaritalStatusId { get; private set; }
-    public MaritalStatus MaritalStatus { get; private set; } = null!;
-    public string IdNumber { get; private set; } = string.Empty;
-    public string PostalAddress { get; private set; } = string.Empty;
-    public string PhysicalAddress { get; private set; } = string.Empty;
-    public int SocialProgramId { get; private set; }
-    public SocialProgram SocialProgram { get; private set; } = null!;
+    [Key]
+    public int Id { get; set; }
 
-    public readonly List<PhoneContact> PhoneContacts = new();
-    public IReadOnlyList<PhoneContact> GetPhoneContacts() => PhoneContacts.AsReadOnly();
-    public int VillageId { get; private set; }
-    public Village Village { get; private set; } = null!;
-    public int OfficerId { get; private set; }
-    public Officer Officer { get; private set; } = null!;
-    public DateOnly SignedDate { get; private set; }
+    [Required(ErrorMessage = "Application date is required")]
+    [Display(Name = "Application Date")]
+    public DateOnly ApplicationDate { get; set; }
 
+    [Required(ErrorMessage = "First name is required")]
+    [StringLength(50, ErrorMessage = "First name cannot exceed 50 characters")]
+    [Display(Name = "First Name")]
+    public string FirstName { get; set; } = string.Empty;
+
+    [Required(ErrorMessage = "Middle name is required")]
+    [StringLength(50, ErrorMessage = "Middle name cannot exceed 50 characters")]
+    [Display(Name = "Middle Name")]
+    public string MiddleName { get; set; } = string.Empty;
+
+    [Required(ErrorMessage = "Last name is required")]
+    [StringLength(50, ErrorMessage = "Last name cannot exceed 50 characters")]
+    [Display(Name = "Last Name")]
+    public string LastName { get; set; } = string.Empty;
+
+    [Required(ErrorMessage = "Date of birth is required")]
+    [Display(Name = "Date of Birth")]
+    public DateOnly DateOfBirth { get; set; }
+
+    [Required(ErrorMessage = "Gender is required")]
+    [Display(Name = "Gender")]
+    public int GenderId { get; set; }
+    public Gender Gender { get; set; } = null!;
+
+    [Required(ErrorMessage = "Marital status is required")]
+    [Display(Name = "Marital Status")]
+    public int MaritalStatusId { get; set; }
+    public MaritalStatus MaritalStatus { get; set; } = null!;
+
+    [Required(ErrorMessage = "ID number is required")]
+    [StringLength(20, ErrorMessage = "ID number cannot exceed 20 characters")]
+    [Display(Name = "ID Number")]
+    public string IdNumber { get; set; } = string.Empty;
+
+    [Required(ErrorMessage = "Postal address is required")]
+    [StringLength(200, ErrorMessage = "Postal address cannot exceed 200 characters")]
+    [Display(Name = "Postal Address")]
+    public string PostalAddress { get; set; } = string.Empty;
+
+    [Required(ErrorMessage = "Physical address is required")]
+    [StringLength(200, ErrorMessage = "Physical address cannot exceed 200 characters")]
+    [Display(Name = "Physical Address")]
+    public string PhysicalAddress { get; set; } = string.Empty;
+
+    [Required(ErrorMessage = "Social program is required")]
+    [Display(Name = "Social Program")]
+    public int SocialProgramId { get; set; }
+    public SocialProgram SocialProgram { get; set; } = null!;
+
+    public List<PhoneContact> PhoneContacts { get; set; } = new();
+
+    [Required(ErrorMessage = "Village is required")]
+    [Display(Name = "Village")]
+    public int VillageId { get; set; }
+    public Village Village { get; set; } = null!;
+
+    [Required(ErrorMessage = "Officer is required")]
+    [Display(Name = "Officer")]
+    public int OfficerId { get; set; }
+    public Officer Officer { get; set; } = null!;
+
+    [Required(ErrorMessage = "Signed date is required")]
+    [Display(Name = "Signed Date")]
+    public DateOnly SignedDate { get; set; }
+
+    [Display(Name = "Full Name")]
     public string FullName => $"{FirstName} {MiddleName} {LastName}".Replace("  ", " ").Trim();
-
-    private Applicant() { } // For EF Core
-    public Applicant(
-        DateOnly applicationDate,
-        string firstName,
-        string middleName,
-        string lastName,
-        DateOnly dateOfBirth,
-        int genderId,
-        int maritalStatusId,
-        string idNumber,
-        string postalAddress,
-        string physicalAddress,
-        int socialProgramId,
-        int villageId,
-        int officerId,
-        DateOnly signedDate
-        )
-    {
-        ApplicationDate = applicationDate;
-        FirstName = firstName;
-        MiddleName = middleName;
-        LastName = lastName;
-        DateOfBirth = dateOfBirth;
-        GenderId = genderId;
-        MaritalStatusId = maritalStatusId;
-        IdNumber = idNumber;
-        PostalAddress = postalAddress;
-        PhysicalAddress = physicalAddress;
-        SocialProgramId = socialProgramId;
-        VillageId = villageId;
-        OfficerId = officerId;
-        SignedDate = signedDate;
-    }
-
-    public void AddPhoneContact(string phoneNumber)
-    {
-        if (string.IsNullOrWhiteSpace(phoneNumber))
-            throw new ArgumentException("Phone number cannot be empty.", nameof(phoneNumber));
-        PhoneContacts.Add(new PhoneContact(this, phoneNumber));
-    }
-
-    public void RemovePhoneContact(PhoneContact phoneContact)
-    {
-        if (phoneContact == null)
-            throw new ArgumentNullException(nameof(phoneContact));
-        PhoneContacts.Remove(phoneContact);
-    }
-
-    public void Update(
-        DateOnly applicationDate,
-        string firstName,
-        string middleName,
-        string lastName,
-        DateOnly dateOfBirth,
-        int genderId,
-        int maritalStatusId,
-        string idNumber,
-        string postalAddress,
-        string physicalAddress,
-        int socialProgramId,
-        int villageId,
-        int officerId,
-        DateOnly signedDate
-        )
-    {
-        ApplicationDate = applicationDate;
-        FirstName = firstName;
-        MiddleName = middleName;
-        LastName = lastName;
-        DateOfBirth = dateOfBirth;
-        GenderId = genderId;
-        MaritalStatusId = maritalStatusId;
-        IdNumber = idNumber;
-        PostalAddress = postalAddress;
-        PhysicalAddress = physicalAddress;
-        SocialProgramId = socialProgramId;
-        VillageId = villageId;
-        OfficerId = officerId;
-        SignedDate = signedDate;
-    }
 }

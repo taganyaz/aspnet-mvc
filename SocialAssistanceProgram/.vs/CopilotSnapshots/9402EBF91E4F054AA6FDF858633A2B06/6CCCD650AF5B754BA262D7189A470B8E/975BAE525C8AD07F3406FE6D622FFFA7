@@ -1,0 +1,14 @@
+﻿using AutoMapper;
+using SocialAssistanceProgram.Core.Domain.Models;
+using SocialAssistanceProgram.ViewModels;
+
+namespace SocialAssistanceProgram.Mappings;
+
+public class WebMappingProfile: Profile
+{
+    public WebMappingProfile()
+    {
+        // No longer needed since we're mapping manually in the controller
+        // This keeps the Profile class intact in case it's needed for future use
+    }
+}
