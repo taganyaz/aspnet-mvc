@@ -1,0 +1,51 @@
+﻿using AutoMapper;
+using SocialAssistanceProgram.Core.Domain.Models;
+using SocialAssistanceProgram.ViewModels;
+
+namespace SocialAssistanceProgram.Mappings;
+
+public class WebMappingProfile: Profile
+{
+    public WebMappingProfile()
+    {
+        // Map CreateApplicantViewModel to Applicant
+        CreateMap<CreateApplicantViewModel, Applicant>()
+            .ForMember(dest => dest.Id, opt => opt.Ignore()) // Id is auto-generated
+            .ForMember(dest => dest.Gender, opt => opt.Ignore()) // Navigation property
+            .ForMember(dest => dest.MaritalStatus, opt => opt.Ignore()) // Navigation property
+            .ForMember(dest => dest.Village, opt => opt.Ignore()) // Navigation property
+            .ForMember(dest => dest.Officer, opt => opt.Ignore()) // Navigation property
+            .ForMember(dest => dest.PhoneContacts, opt => opt.MapFrom(src => src.PhoneContacts ?? new List<PhoneContact>()))
+            .ForMember(dest => dest.ApplicantSocialPrograms, opt => opt.MapFrom(src => 
+                src.SelectedSocialProgramIds.Select(id => new ApplicantSocialProgram 
+                { 
+                    SocialProgramId = id
+                }).ToList()))
+            .ForMember(dest => dest.SocialPrograms, opt => opt.Ignore()); // This is a computed property
+
+        // Map EditApplicantViewModel to Applicant
+        CreateMap<EditApplicantViewModel, Applicant>()
+            .ForMember(dest => dest.Gender, opt => opt.Ignore()) // Navigation property
+            .ForMember(dest => dest.MaritalStatus, opt => opt.Ignore()) // Navigation property
+            .ForMember(dest => dest.Village, opt => opt.Ignore()) // Navigation property
+            .ForMember(dest => dest.Officer, opt => opt.Ignore()) // Navigation property
+            .ForMember(dest => dest.PhoneContacts, opt => opt.MapFrom(src => src.PhoneContacts ?? new List<PhoneContact>()))
+            .ForMember(dest => dest.ApplicantSocialPrograms, opt => opt.MapFrom(src => 
+                src.SelectedSocialProgramIds.Select(id => new ApplicantSocialProgram 
+                { 
+                    ApplicantId = src.Id,
+                    SocialProgramId = id
+                }).ToList()))
+            .ForMember(dest => dest.SocialPrograms, opt => opt.Ignore()); // This is a computed property
+
+        // Map Applicant to EditApplicantViewModel for Edit GET action
+        CreateMap<Applicant, EditApplicantViewModel>()
+            .ForMember(dest => dest.CountyId, opt => opt.Ignore()) // Not directly available in Applicant
+            .ForMember(dest => dest.SubCountyId, opt => opt.Ignore()) // Not directly available in Applicant
+            .ForMember(dest => dest.LocationId, opt => opt.Ignore()) // Not directly available in Applicant
+            .ForMember(dest => dest.SubLocationId, opt => opt.Ignore()) // Not directly available in Applicant
+            .ForMember(dest => dest.PhoneContacts, opt => opt.MapFrom(src => src.PhoneContacts ?? new List<PhoneContact>()))
+            .ForMember(dest => dest.SelectedSocialProgramIds, opt => opt.MapFrom(src => 
+                src.ApplicantSocialPrograms.Select(asp => asp.SocialProgramId).ToList()));
+    }
+}

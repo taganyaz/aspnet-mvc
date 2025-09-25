@@ -36,6 +36,7 @@ public class ApplicantRepository : IApplicantRepository
     public Task<Applicant?> GetByIdAsync(int id)
     {
         return _context.Applicant
+            .Include(x => x.ApplicantSocialPrograms)
             .Include(a => a.Village)
                 .ThenInclude(v => v!.SubLocation)
                     .ThenInclude(sl => sl!.Location)
@@ -46,7 +47,32 @@ public class ApplicantRepository : IApplicantRepository
 
     public async Task UpdateAsync(Applicant applicant)
     {
+        var currentSocialPrograms = applicant.ApplicantSocialPrograms.ToList();
+        applicant.ApplicantSocialPrograms.Clear();
+
+        var existingPrograms = _context.Set<ApplicantSocialProgram>()
+            .Where(asp => asp.ApplicantId == applicant.Id).ToList();
+
+        var toRemove = existingPrograms
+            .Where(ep => !currentSocialPrograms.Any(sp => sp.SocialProgramId == ep.SocialProgramId))
+            .ToList();
+
+        var toAdd = currentSocialPrograms
+            .Where(sp => !existingPrograms.Any(ep => ep.SocialProgramId == sp.SocialProgramId))
+            .ToList();
+
+        if (toRemove.Any())
+            _context.Set<ApplicantSocialProgram>().RemoveRange(toRemove);
+
+        if (toAdd.Any())
+            foreach (var sp in toAdd)
+            {
+                _context.Entry(sp).State = EntityState.Added;
+                applicant.ApplicantSocialPrograms.Add(sp);
+            }
+
         _context.Entry(applicant).State = EntityState.Modified;
+
         await _context.SaveChangesAsync();
     }
 }

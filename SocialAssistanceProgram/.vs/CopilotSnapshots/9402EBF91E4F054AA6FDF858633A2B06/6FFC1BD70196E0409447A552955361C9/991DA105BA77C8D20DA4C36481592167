@@ -1,0 +1,403 @@
+﻿using SocialAssistanceProgram.Infrastructure.Data;
+using SocialAssistanceProgram.Core.Domain.Models;
+
+namespace SocialAssistanceProgram.Infrastructure;
+
+public static class DbInitializer
+{
+    public static void Initialize(ApplicationDbContext context)
+    {
+        // Ensure the database is created
+        context.Database.EnsureCreated();
+
+        // Seed data for all entities in the correct order (respecting foreign key dependencies)
+        SeedCounties(context);
+        SeedSubCounties(context);
+        SeedLocations(context);
+        SeedSubLocations(context);
+        SeedVillages(context);
+        SeedGenders(context);
+        SeedMaritalStatuses(context);
+        SeedOfficerDesignations(context);
+        SeedOfficers(context);
+        SeedSocialPrograms(context);
+        SeedApplicants(context);
+    }
+
+    private static void SeedCounties(ApplicationDbContext context)
+    {
+        // Check if Counties already exist
+        if (context.Counties.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Seed County data
+        var counties = new County[]
+        {
+            new County("Nairobi"),
+            new County("Mombasa"),
+            new County("Kiambu"),
+            new County("Nakuru"),
+            new County("Machakos")
+        };
+
+        foreach (County county in counties)
+        {
+            context.Counties.Add(county);
+        }
+
+        context.SaveChanges();
+    }
+
+    private static void SeedSubCounties(ApplicationDbContext context)
+    {
+        // Check if SubCounties already exist
+        if (context.SubCounties.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Seed SubCounty data (assuming County IDs 1-5 from previous seeding)
+        var subCounties = new SubCounty[]
+        {
+            new SubCounty("Westlands", 1),       // Nairobi
+            new SubCounty("Kasarani", 1),        // Nairobi
+            new SubCounty("Kisauni", 2),         // Mombasa
+            new SubCounty("Thika", 3),           // Kiambu
+            new SubCounty("Nakuru East", 4)      // Nakuru
+        };
+
+        foreach (SubCounty subCounty in subCounties)
+        {
+            context.SubCounties.Add(subCounty);
+        }
+
+        context.SaveChanges();
+    }
+
+    private static void SeedLocations(ApplicationDbContext context)
+    {
+        // Check if Locations already exist
+        if (context.Locations.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Seed Location data (assuming SubCounty IDs 1-5 from previous seeding)
+        var locations = new Location[]
+        {
+            new Location("Parklands", 1),        // Westlands
+            new Location("Mwiki", 2),            // Kasarani
+            new Location("Bamburi", 3),          // Kisauni
+            new Location("Thika Town", 4),       // Thika
+            new Location("Section 58", 5)        // Nakuru East
+        };
+
+        foreach (Location location in locations)
+        {
+            context.Locations.Add(location);
+        }
+
+        context.SaveChanges();
+    }
+
+    private static void SeedSubLocations(ApplicationDbContext context)
+    {
+        // Check if SubLocations already exist
+        if (context.SubLocations.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Seed SubLocation data (assuming Location IDs 1-5 from previous seeding)
+        var subLocations = new SubLocation[]
+        {
+            new SubLocation("Highridge", 1),     // Parklands
+            new SubLocation("Kasarani Estate", 2), // Mwiki
+            new SubLocation("Bamburi Mtambo", 3), // Bamburi
+            new SubLocation("Hospital", 4),      // Thika Town
+            new SubLocation("Flamingo", 5)       // Section 58
+        };
+
+        foreach (SubLocation subLocation in subLocations)
+        {
+            context.SubLocations.Add(subLocation);
+        }
+
+        context.SaveChanges();
+    }
+
+    private static void SeedVillages(ApplicationDbContext context)
+    {
+        // Check if Villages already exist
+        if (context.Villages.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Seed Village data (assuming SubLocation IDs 1-5 from previous seeding)
+        var villages = new Village[]
+        {
+            new Village("Highridge Central", 1),  // Highridge
+            new Village("Clay City", 2),          // Kasarani Estate
+            new Village("Bamburi Kwa Chief", 3),  // Bamburi Mtambo
+            new Village("Blue Post", 4),          // Hospital
+            new Village("Flamingo Estate", 5)     // Flamingo
+        };
+
+        foreach (Village village in villages)
+        {
+            context.Villages.Add(village);
+        }
+
+        context.SaveChanges();
+    }
+
+    private static void SeedGenders(ApplicationDbContext context)
+    {
+        // Check if Genders already exist
+        if (context.Genders.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Seed Gender data
+        context.Genders.AddRange(
+            new Gender("Male"),
+            new Gender("Female"),
+            new Gender("Other"),
+            new Gender("Prefer not to say")
+        );
+
+        context.SaveChanges();
+    }
+
+    private static void SeedMaritalStatuses(ApplicationDbContext context)
+    {
+        // Check if MaritalStatuses already exist
+        if (context.MaritalStatuses.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Seed MaritalStatus data
+        context.MaritalStatuses.AddRange(
+            new MaritalStatus("Single"),
+            new MaritalStatus("Married"),
+            new MaritalStatus("Divorced"),
+            new MaritalStatus("Widowed"),
+            new MaritalStatus("Separated")
+        );
+
+        context.SaveChanges();
+    }
+
+    private static void SeedOfficerDesignations(ApplicationDbContext context)
+    {
+        // Check if OfficerDesignations already exist
+        if (context.OfficerDesignations.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Seed OfficerDesignation data
+        context.OfficerDesignations.AddRange(
+            new OfficerDesignation("Social Worker"),
+            new OfficerDesignation("Program Officer"),
+            new OfficerDesignation("Case Manager"),
+            new OfficerDesignation("Field Officer"),
+            new OfficerDesignation("Assistant Social Worker"),
+            new OfficerDesignation("Senior Social Worker"),
+            new OfficerDesignation("Program Coordinator"),
+            new OfficerDesignation("Community Liaison Officer"),
+            new OfficerDesignation("Benefits Advisor"),
+            new OfficerDesignation("Supervisor")
+        );
+
+        context.SaveChanges();
+    }
+
+    private static void SeedOfficers(ApplicationDbContext context)
+    {
+        // Check if Officers already exist
+        if (context.Officers.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Seed Officer data (assuming OfficerDesignation IDs 1-10 from previous seeding)
+        context.Officers.AddRange(
+            new Officer("John", "Mwangi", "Kamau", 1),      // Social Worker
+            new Officer("Mary", "Wanjiku", "Ndung'u", 2),   // Program Officer
+            new Officer("Peter", "Otieno", "Ochieng", 3)    // Case Manager
+        );
+
+        context.SaveChanges();
+    }
+
+    private static void SeedSocialPrograms(ApplicationDbContext context)
+    {
+        // Check if SocialPrograms already exist
+        if (context.SocialPrograms.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Seed SocialProgram data using object initializers
+        var socialPrograms = new[]
+        {
+            new SocialProgram { Name = "Elderly Care Assistance", Description = "Support program for elderly citizens needing care assistance" },
+            new SocialProgram { Name = "Child Support Program", Description = "Financial and educational support for children in need" },
+            new SocialProgram { Name = "Disability Support Services", Description = "Comprehensive support services for persons with disabilities" },
+            new SocialProgram { Name = "Emergency Food Aid", Description = "Emergency food assistance for families facing food insecurity" },
+            new SocialProgram { Name = "Housing Support Program", Description = "Housing assistance and shelter support for homeless individuals and families" }
+        };
+
+        context.SocialPrograms.AddRange(socialPrograms);
+        context.SaveChanges();
+    }
+
+    private static void SeedApplicants(ApplicationDbContext context)
+    {
+        // Check if Applicants already exist
+        if (context.Applicant.Any())
+        {
+            return; // Database has been seeded
+        }
+
+        // Create applicant data with realistic information using object initializers
+        var applicants = new[]
+        {
+            new Applicant
+            {
+                ApplicationDate = new DateOnly(2024, 1, 15),
+                FirstName = "Grace",
+                MiddleName = "Wanjiku",
+                LastName = "Mwangi",
+                DateOfBirth = new DateOnly(1985, 6, 12),
+                GenderId = 2,                              // Female
+                MaritalStatusId = 2,                       // Married
+                IdNumber = "29485123",
+                PostalAddress = "P.O. Box 1234, Nairobi",
+                PhysicalAddress = "Highridge Central Village",
+                VillageId = 1,                             // Highridge Central
+                OfficerId = 1,                             // John Kamau
+                SignedDate = new DateOnly(2024, 1, 15)
+            },
+            new Applicant
+            {
+                ApplicationDate = new DateOnly(2024, 2, 3),
+                FirstName = "Samuel",
+                MiddleName = "Kipchoge",
+                LastName = "Kiprotich",
+                DateOfBirth = new DateOnly(1978, 11, 25),
+                GenderId = 1,                              // Male
+                MaritalStatusId = 4,                       // Widowed
+                IdNumber = "18765432",
+                PostalAddress = "P.O. Box 5678, Mombasa",
+                PhysicalAddress = "Clay City Village",
+                VillageId = 2,                             // Clay City
+                OfficerId = 2,                             // Mary Ndung'u
+                SignedDate = new DateOnly(2024, 2, 5)
+            },
+            new Applicant
+            {
+                ApplicationDate = new DateOnly(2024, 2, 20),
+                FirstName = "Faith",
+                MiddleName = "Nyambura",
+                LastName = "Kamau",
+                DateOfBirth = new DateOnly(1992, 3, 8),
+                GenderId = 2,                              // Female
+                MaritalStatusId = 1,                       // Single
+                IdNumber = "31245678",
+                PostalAddress = "P.O. Box 9876, Kiambu",
+                PhysicalAddress = "Bamburi Kwa Chief Village",
+                VillageId = 3,                             // Bamburi Kwa Chief
+                OfficerId = 3,                             // Peter Ochieng
+                SignedDate = new DateOnly(2024, 2, 22)
+            },
+            new Applicant
+            {
+                ApplicationDate = new DateOnly(2024, 3, 10),
+                FirstName = "David",
+                MiddleName = "Otieno",
+                LastName = "Oduya",
+                DateOfBirth = new DateOnly(1965, 9, 15),
+                GenderId = 1,                              // Male
+                MaritalStatusId = 2,                       // Married
+                IdNumber = "15987654",
+                PostalAddress = "P.O. Box 2468, Nakuru",
+                PhysicalAddress = "Blue Post Village",
+                VillageId = 4,                             // Blue Post
+                OfficerId = 1,                             // John Kamau
+                SignedDate = new DateOnly(2024, 3, 12)
+            }
+        };
+
+        // Add applicants to context
+        context.Applicant.AddRange(applicants);
+        context.SaveChanges();
+
+        // Get the saved applicants with their IDs
+        var savedApplicants = context.Applicant.ToList();
+
+        // Create ApplicantSocialProgram relationships
+        var applicantSocialPrograms = new List<ApplicantSocialProgram>
+        {
+            // Grace Mwangi - Elderly Care Assistance and Housing Support
+            new ApplicantSocialProgram { ApplicantId = savedApplicants[0].Id, SocialProgramId = 1, DateEnrolled = new DateOnly(2024, 1, 15) },
+            new ApplicantSocialProgram { ApplicantId = savedApplicants[0].Id, SocialProgramId = 5, DateEnrolled = new DateOnly(2024, 1, 20) },
+
+            // Samuel Kiprotich - Child Support Program and Emergency Food Aid
+            new ApplicantSocialProgram { ApplicantId = savedApplicants[1].Id, SocialProgramId = 2, DateEnrolled = new DateOnly(2024, 2, 3) },
+            new ApplicantSocialProgram { ApplicantId = savedApplicants[1].Id, SocialProgramId = 4, DateEnrolled = new DateOnly(2024, 2, 10) },
+
+            // Faith Kamau - Disability Support Services
+            new ApplicantSocialProgram { ApplicantId = savedApplicants[2].Id, SocialProgramId = 3, DateEnrolled = new DateOnly(2024, 2, 20) },
+
+            // David Oduya - Emergency Food Aid, Housing Support, and Elderly Care
+            new ApplicantSocialProgram { ApplicantId = savedApplicants[3].Id, SocialProgramId = 4, DateEnrolled = new DateOnly(2024, 3, 10) },
+            new ApplicantSocialProgram { ApplicantId = savedApplicants[3].Id, SocialProgramId = 5, DateEnrolled = new DateOnly(2024, 3, 15) },
+            new ApplicantSocialProgram { ApplicantId = savedApplicants[3].Id, SocialProgramId = 1, DateEnrolled = new DateOnly(2024, 3, 20) }
+        };
+
+        // Add social program relationships
+        context.ApplicantSocialPrograms.AddRange(applicantSocialPrograms);
+        context.SaveChanges();
+
+        // Create phone contacts for each applicant
+        var phoneContacts = new List<PhoneContact>();
+
+        // Applicant 1 - Grace Mwangi (3 phone numbers)
+        phoneContacts.AddRange(new[]
+        {
+            new PhoneContact { ApplicantId = savedApplicants[0].Id, PhoneNumber = "0721234567" },
+            new PhoneContact { ApplicantId = savedApplicants[0].Id, PhoneNumber = "0734567890" },
+            new PhoneContact { ApplicantId = savedApplicants[0].Id, PhoneNumber = "0756789012" }
+        });
+
+        // Applicant 2 - Samuel Kiprotich (2 phone numbers)
+        phoneContacts.AddRange(new[]
+        {
+            new PhoneContact { ApplicantId = savedApplicants[1].Id, PhoneNumber = "0722345678" },
+            new PhoneContact { ApplicantId = savedApplicants[1].Id, PhoneNumber = "0745678901" }
+        });
+
+        // Applicant 3 - Faith Kamau (3 phone numbers)
+        phoneContacts.AddRange(new[]
+        {
+            new PhoneContact { ApplicantId = savedApplicants[2].Id, PhoneNumber = "0723456789" },
+            new PhoneContact { ApplicantId = savedApplicants[2].Id, PhoneNumber = "0736789012" },
+            new PhoneContact { ApplicantId = savedApplicants[2].Id, PhoneNumber = "0757890123" }
+        });
+
+        // Applicant 4 - David Oduya (1 phone number)
+        phoneContacts.Add(new PhoneContact { ApplicantId = savedApplicants[3].Id, PhoneNumber = "0724567890" });
+
+        // Add phone contacts to the database
+        context.PhoneContacts.AddRange(phoneContacts);
+        context.SaveChanges();
+    }
+}
+

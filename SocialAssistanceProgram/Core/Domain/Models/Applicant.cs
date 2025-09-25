@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace SocialAssistanceProgram.Core.Domain.Models;
 
 public class Applicant
 {
-    [Key]
     public int Id { get; set; }
 
     [Required(ErrorMessage = "Application date is required")]
@@ -55,10 +55,11 @@ public class Applicant
     [Display(Name = "Physical Address")]
     public string PhysicalAddress { get; set; } = string.Empty;
 
-    [Required(ErrorMessage = "Social program is required")]
-    [Display(Name = "Social Program")]
-    public int SocialProgramId { get; set; }
-    public SocialProgram SocialProgram { get; set; } = null!;
+    // Many-to-many relationship with SocialProgram
+    public List<ApplicantSocialProgram> ApplicantSocialPrograms { get; set; } = new();
+    
+    // Navigation property for easy access to social programs
+    // public List<SocialProgram> SocialPrograms => ApplicantSocialPrograms.Select(asp => asp.SocialProgram).ToList();
 
     public List<PhoneContact> PhoneContacts { get; set; } = new();
 

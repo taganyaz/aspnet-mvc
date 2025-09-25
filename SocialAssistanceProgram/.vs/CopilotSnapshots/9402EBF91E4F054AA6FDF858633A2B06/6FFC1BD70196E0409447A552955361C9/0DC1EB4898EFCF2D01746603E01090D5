@@ -1,0 +1,24 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SocialAssistanceProgram.Core.Domain.Models;
+
+public class ApplicantSocialProgram
+{
+    [Key]
+    public int Id { get; set; }
+
+    [Required(ErrorMessage = "Applicant is required")]
+    public int ApplicantId { get; set; }
+    public Applicant Applicant { get; set; } = null!;
+
+    [Required(ErrorMessage = "Social program is required")]
+    public int SocialProgramId { get; set; }
+    public SocialProgram SocialProgram { get; set; } = null!;
+
+    [Display(Name = "Date Enrolled")]
+    public DateOnly DateEnrolled { get; set; } = DateOnly.FromDateTime(DateTime.Now);
+
+    [StringLength(500, ErrorMessage = "Notes cannot exceed 500 characters")]
+    [Display(Name = "Notes")]
+    public string? Notes { get; set; }
+}

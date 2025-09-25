@@ -78,9 +78,6 @@ namespace SocialAssistanceProgram.Migrations
                     b.Property<DateOnly>("SignedDate")
                         .HasColumnType("date");
 
-                    b.Property<int>("SocialProgramId")
-                        .HasColumnType("int");
-
                     b.Property<int>("VillageId")
                         .HasColumnType("int");
 
@@ -92,11 +89,24 @@ namespace SocialAssistanceProgram.Migrations
 
                     b.HasIndex("OfficerId");
 
-                    b.HasIndex("SocialProgramId");
-
                     b.HasIndex("VillageId");
 
                     b.ToTable("Applicant");
+                });
+
+            modelBuilder.Entity("SocialAssistanceProgram.Core.Domain.Models.ApplicantSocialProgram", b =>
+                {
+                    b.Property<int>("ApplicantId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SocialProgramId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ApplicantId", "SocialProgramId");
+
+                    b.HasIndex("SocialProgramId");
+
+                    b.ToTable("ApplicantSocialPrograms");
                 });
 
             modelBuilder.Entity("SocialAssistanceProgram.Core.Domain.Models.County", b =>
@@ -250,9 +260,14 @@ namespace SocialAssistanceProgram.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 
@@ -345,12 +360,6 @@ namespace SocialAssistanceProgram.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SocialAssistanceProgram.Core.Domain.Models.SocialProgram", "SocialProgram")
-                        .WithMany()
-                        .HasForeignKey("SocialProgramId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("SocialAssistanceProgram.Core.Domain.Models.Village", "Village")
                         .WithMany()
                         .HasForeignKey("VillageId")
@@ -363,9 +372,26 @@ namespace SocialAssistanceProgram.Migrations
 
                     b.Navigation("Officer");
 
-                    b.Navigation("SocialProgram");
-
                     b.Navigation("Village");
+                });
+
+            modelBuilder.Entity("SocialAssistanceProgram.Core.Domain.Models.ApplicantSocialProgram", b =>
+                {
+                    b.HasOne("SocialAssistanceProgram.Core.Domain.Models.Applicant", "Applicant")
+                        .WithMany("ApplicantSocialPrograms")
+                        .HasForeignKey("ApplicantId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SocialAssistanceProgram.Core.Domain.Models.SocialProgram", "SocialProgram")
+                        .WithMany()
+                        .HasForeignKey("SocialProgramId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Applicant");
+
+                    b.Navigation("SocialProgram");
                 });
 
             modelBuilder.Entity("SocialAssistanceProgram.Core.Domain.Models.Location", b =>
@@ -436,6 +462,8 @@ namespace SocialAssistanceProgram.Migrations
 
             modelBuilder.Entity("SocialAssistanceProgram.Core.Domain.Models.Applicant", b =>
                 {
+                    b.Navigation("ApplicantSocialPrograms");
+
                     b.Navigation("PhoneContacts");
                 });
 #pragma warning restore 612, 618

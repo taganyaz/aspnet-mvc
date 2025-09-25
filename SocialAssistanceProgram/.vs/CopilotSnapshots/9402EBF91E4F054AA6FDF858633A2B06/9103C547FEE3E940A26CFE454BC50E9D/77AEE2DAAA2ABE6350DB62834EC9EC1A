@@ -1,0 +1,24 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SocialAssistanceProgram.Core.Domain.Models;
+
+public class SocialProgram
+{
+    [Key]
+    public int Id { get; set; }
+
+    [Required(ErrorMessage = "Program name is required")]
+    [StringLength(100, ErrorMessage = "Program name cannot exceed 100 characters")]
+    [Display(Name = "Program Name")]
+    public string Name { get; set; } = string.Empty;
+
+    [StringLength(500, ErrorMessage = "Description cannot exceed 500 characters")]
+    [Display(Name = "Description")]
+    public string? Description { get; set; }
+
+    // Many-to-many relationship with Applicant
+    public List<ApplicantSocialProgram> ApplicantSocialPrograms { get; set; } = new();
+
+    // Navigation property for easy access to applicants
+    public List<Applicant> Applicants => ApplicantSocialPrograms.Select(asp => asp.Applicant).ToList();
+}
