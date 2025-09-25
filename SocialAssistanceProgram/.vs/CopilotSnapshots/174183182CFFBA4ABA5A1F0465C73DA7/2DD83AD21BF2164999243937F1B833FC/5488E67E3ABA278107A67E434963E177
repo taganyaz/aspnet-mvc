@@ -166,7 +166,6 @@
             var initialSubCountyId = '@ViewData["SelectedSubCountyId"]';
             var initialLocationId = '@ViewData["SelectedLocationId"]';
             var initialSubLocationId = '@ViewData["SelectedSubLocationId"]';
-            var initialVillageId = '@ViewData["SelectedVillageId"]';
 
             // If we have initial values (editing mode), set up the cascading dropdowns
             if (initialCountyId && initialCountyId !== '') {
@@ -210,7 +209,6 @@
                                                         data: { subLocationId: initialSubLocationId },
                                                         success: function (data) {
                                                             populateDropdown($('#villageSelect'), data, '-- Select Village --');
-                                                            setSelectedValue($('#villageSelect'), initialVillageId);
                                                             // Village should already be selected via ViewBag.VillageId
                                                         }
                                                     });

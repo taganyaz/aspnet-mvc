@@ -51,9 +51,9 @@ namespace SocialAssistanceProgram.Controllers
         }
 
         // GET: Applicants/Create
-        public async Task<IActionResult> Create()
+        public IActionResult Create()
         {
-            await PopulateDropDownsAsync();
+            PopulateDropDowns();
             return View();
         }
 
@@ -71,7 +71,7 @@ namespace SocialAssistanceProgram.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            await PopulateDropDownsAsync();
+            PopulateDropDowns();
             return View(viewModel);
         }
 
@@ -92,7 +92,7 @@ namespace SocialAssistanceProgram.Controllers
             // Use AutoMapper to map Applicant to EditViewModel
             var viewModel = _mapper.Map<EditApplicantViewModel>(applicant);
 
-            await PopulateDropDownsAsync(applicant);
+            PopulateDropDowns(applicant);
             return View(viewModel);
         }
 
@@ -122,7 +122,7 @@ namespace SocialAssistanceProgram.Controllers
                 }
             }
 
-            await PopulateDropDownsAsync();
+            PopulateDropDowns();
             return View(viewModel);
         }
 
@@ -197,7 +197,7 @@ namespace SocialAssistanceProgram.Controllers
             return Json(villages);
         }
 
-        private async Task PopulateDropDownsAsync(Applicant? applicant = null)
+        private async void PopulateDropDowns(Applicant? applicant = null)
         {
             ViewData["GenderId"] = new SelectList(_context.Set<Gender>(), "Id", "Name", applicant?.GenderId);
             ViewData["MaritalStatusId"] = new SelectList(_context.Set<MaritalStatus>(), "Id", "Name", applicant?.MaritalStatusId);
@@ -253,17 +253,24 @@ namespace SocialAssistanceProgram.Controllers
                     ViewData["SelectedSubCountyId"] = subCountyId;
                     ViewData["SelectedLocationId"] = locationId;
                     ViewData["SelectedSubLocationId"] = subLocationId;
-                    ViewData["SelectedVillageId"] = village.Id;
-
-                    return;
+                }
+                else
+                {
+                    // If village not found, set empty dropdowns
+                    ViewData["SubCountyId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                    ViewData["LocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                    ViewData["SubLocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                    ViewData["VillageId"] = new SelectList(_context.Set<Village>(), "Id", "Name", applicant.VillageId);
                 }
             }
-
-            // No applicant or village selected, set empty dropdowns
-            ViewData["SubCountyId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
-            ViewData["LocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
-            ViewData["SubLocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
-            ViewData["VillageId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+            else
+            {
+                // No applicant or village selected, set empty dropdowns
+                ViewData["SubCountyId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                ViewData["LocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                ViewData["SubLocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                ViewData["VillageId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+            }
         }
     }
 }

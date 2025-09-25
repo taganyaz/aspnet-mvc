@@ -40,10 +40,10 @@ public class WebMappingProfile: Profile
 
         // Map Applicant to EditApplicantViewModel for Edit GET action
         CreateMap<Applicant, EditApplicantViewModel>()
-            .ForMember(dest => dest.CountyId, opt => opt.Ignore()) // Not directly available in Applicant
-            .ForMember(dest => dest.SubCountyId, opt => opt.Ignore()) // Not directly available in Applicant
-            .ForMember(dest => dest.LocationId, opt => opt.Ignore()) // Not directly available in Applicant
-            .ForMember(dest => dest.SubLocationId, opt => opt.Ignore()) // Not directly available in Applicant
+            .ForMember(dest => dest.CountyId, opt => opt.MapFrom(src => src.Village.SubLocation.Location.SubCounty.CountyId)) 
+            .ForMember(dest => dest.SubCountyId, opt => opt.MapFrom(src => src.Village.SubLocation.Location.SubCountyId))
+            .ForMember(dest => dest.LocationId, opt => opt.MapFrom(src => src.Village.SubLocation.LocationId))
+            .ForMember(dest => dest.SubLocationId, opt => opt.MapFrom(src => src.Village.SubLocationId))
             .ForMember(dest => dest.PhoneContacts, opt => opt.MapFrom(src => src.PhoneContacts ?? new List<PhoneContact>()))
             .ForMember(dest => dest.SelectedSocialProgramIds, opt => opt.MapFrom(src => 
                 src.ApplicantSocialPrograms.Select(asp => asp.SocialProgramId).ToList()));

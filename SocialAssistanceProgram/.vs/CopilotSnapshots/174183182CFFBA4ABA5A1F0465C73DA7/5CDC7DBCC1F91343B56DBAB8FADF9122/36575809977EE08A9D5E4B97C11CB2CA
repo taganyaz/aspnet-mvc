@@ -51,9 +51,9 @@ namespace SocialAssistanceProgram.Controllers
         }
 
         // GET: Applicants/Create
-        public async Task<IActionResult> Create()
+        public IActionResult Create()
         {
-            await PopulateDropDownsAsync();
+            PopulateDropDowns();
             return View();
         }
 
@@ -71,7 +71,8 @@ namespace SocialAssistanceProgram.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            await PopulateDropDownsAsync();
+            PopulateDropDowns(viewModel.GenderId, viewModel.MaritalStatusId, viewModel.OfficerId, 
+                           viewModel.SelectedSocialProgramIds, viewModel.VillageId);
             return View(viewModel);
         }
 
@@ -92,7 +93,8 @@ namespace SocialAssistanceProgram.Controllers
             // Use AutoMapper to map Applicant to EditViewModel
             var viewModel = _mapper.Map<EditApplicantViewModel>(applicant);
 
-            await PopulateDropDownsAsync(applicant);
+            PopulateDropDowns(applicant.GenderId, applicant.MaritalStatusId, applicant.OfficerId,
+                           applicant.ApplicantSocialPrograms.Select(asp => asp.SocialProgramId).ToList(), applicant.VillageId);
             return View(viewModel);
         }
 
@@ -122,7 +124,8 @@ namespace SocialAssistanceProgram.Controllers
                 }
             }
 
-            await PopulateDropDownsAsync();
+            PopulateDropDowns(viewModel.GenderId, viewModel.MaritalStatusId, viewModel.OfficerId,
+                           viewModel.SelectedSocialProgramIds, viewModel.VillageId);
             return View(viewModel);
         }
 
@@ -197,73 +200,19 @@ namespace SocialAssistanceProgram.Controllers
             return Json(villages);
         }
 
-        private async Task PopulateDropDownsAsync(Applicant? applicant = null)
+        private void PopulateDropDowns(int? genderId = null, int? maritalStatusId = null, 
+                                     int? officerId = null, List<int>? selectedSocialProgramIds = null, int? villageId = null)
         {
-            ViewData["GenderId"] = new SelectList(_context.Set<Gender>(), "Id", "Name", applicant?.GenderId);
-            ViewData["MaritalStatusId"] = new SelectList(_context.Set<MaritalStatus>(), "Id", "Name", applicant?.MaritalStatusId);
-            ViewData["OfficerId"] = new SelectList(_context.Set<Officer>(), "Id", "FullName", applicant?.OfficerId);
-            ViewData["SocialProgramIds"] = new MultiSelectList(_context.Set<SocialProgram>(), "Id", "Name", 
-                applicant?.ApplicantSocialPrograms?.Select(asp => asp.SocialProgramId).ToList());
+            ViewData["GenderId"] = new SelectList(_context.Set<Gender>(), "Id", "Name", genderId);
+            ViewData["MaritalStatusId"] = new SelectList(_context.Set<MaritalStatus>(), "Id", "Name", maritalStatusId);
+            ViewData["OfficerId"] = new SelectList(_context.Set<Officer>(), "Id", "FullName", officerId);
+            ViewData["SocialProgramIds"] = new MultiSelectList(_context.Set<SocialProgram>(), "Id", "Name", selectedSocialProgramIds);
+            ViewData["VillageId"] = new SelectList(_context.Set<Village>(), "Id", "Name", villageId);
 
-            // Always populate counties
             ViewData["CountyId"] = new SelectList(_context.Set<County>(), "Id", "Name");
-
-            if (applicant?.VillageId != null)
-            {
-                // Load the village with all navigation properties to get the hierarchy
-                var village = await _context.Villages
-                    .Include(v => v.SubLocation)
-                        .ThenInclude(sl => sl.Location)
-                            .ThenInclude(l => l.SubCounty)
-                                .ThenInclude(sc => sc.County)
-                    .FirstOrDefaultAsync(v => v.Id == applicant.VillageId);
-
-                if (village != null)
-                {
-                    var countyId = village.SubLocation.Location.SubCounty.CountyId;
-                    var subCountyId = village.SubLocation.Location.SubCountyId;
-                    var locationId = village.SubLocation.LocationId;
-                    var subLocationId = village.SubLocationId;
-
-                    // Update county selection
-                    ViewData["CountyId"] = new SelectList(_context.Set<County>(), "Id", "Name", countyId);
-
-                    // Populate sub counties for the selected county
-                    ViewData["SubCountyId"] = new SelectList(
-                        _context.Set<SubCounty>().Where(sc => sc.CountyId == countyId), 
-                        "Id", "Name", subCountyId);
-
-                    // Populate locations for the selected sub county
-                    ViewData["LocationId"] = new SelectList(
-                        _context.Set<Location>().Where(l => l.SubCountyId == subCountyId), 
-                        "Id", "Name", locationId);
-
-                    // Populate sub locations for the selected location
-                    ViewData["SubLocationId"] = new SelectList(
-                        _context.Set<SubLocation>().Where(sl => sl.LocationId == locationId), 
-                        "Id", "Name", subLocationId);
-
-                    // Populate villages for the selected sub location
-                    ViewData["VillageId"] = new SelectList(
-                        _context.Set<Village>().Where(v => v.SubLocationId == subLocationId), 
-                        "Id", "Name", applicant.VillageId);
-
-                    // Store the selected values for JavaScript
-                    ViewData["SelectedCountyId"] = countyId;
-                    ViewData["SelectedSubCountyId"] = subCountyId;
-                    ViewData["SelectedLocationId"] = locationId;
-                    ViewData["SelectedSubLocationId"] = subLocationId;
-                    ViewData["SelectedVillageId"] = village.Id;
-
-                    return;
-                }
-            }
-
-            // No applicant or village selected, set empty dropdowns
             ViewData["SubCountyId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
             ViewData["LocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
             ViewData["SubLocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
-            ViewData["VillageId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
         }
     }
 }

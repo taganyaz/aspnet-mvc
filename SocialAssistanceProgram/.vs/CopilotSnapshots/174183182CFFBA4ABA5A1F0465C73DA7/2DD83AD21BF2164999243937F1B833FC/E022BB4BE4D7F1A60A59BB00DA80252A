@@ -51,9 +51,9 @@ namespace SocialAssistanceProgram.Controllers
         }
 
         // GET: Applicants/Create
-        public async Task<IActionResult> Create()
+        public IActionResult Create()
         {
-            await PopulateDropDownsAsync();
+            PopulateDropDowns();
             return View();
         }
 
@@ -71,7 +71,7 @@ namespace SocialAssistanceProgram.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            await PopulateDropDownsAsync();
+            PopulateDropDowns();
             return View(viewModel);
         }
 
@@ -253,17 +253,24 @@ namespace SocialAssistanceProgram.Controllers
                     ViewData["SelectedSubCountyId"] = subCountyId;
                     ViewData["SelectedLocationId"] = locationId;
                     ViewData["SelectedSubLocationId"] = subLocationId;
-                    ViewData["SelectedVillageId"] = village.Id;
-
-                    return;
+                }
+                else
+                {
+                    // If village not found, set empty dropdowns
+                    ViewData["SubCountyId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                    ViewData["LocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                    ViewData["SubLocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                    ViewData["VillageId"] = new SelectList(_context.Set<Village>(), "Id", "Name", applicant.VillageId);
                 }
             }
-
-            // No applicant or village selected, set empty dropdowns
-            ViewData["SubCountyId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
-            ViewData["LocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
-            ViewData["SubLocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
-            ViewData["VillageId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+            else
+            {
+                // No applicant or village selected, set empty dropdowns
+                ViewData["SubCountyId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                ViewData["LocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                ViewData["SubLocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                ViewData["VillageId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+            }
         }
     }
 }
