@@ -1,0 +1,45 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace SocialAssistanceProgram.Common.ViewModels;
+
+public class ApplicantFilterViewModel
+{
+    [Display(Name = "Name")]
+    public string? NameFilter { get; set; }
+
+    [Display(Name = "ID Number")]
+    public string? IdNumberFilter { get; set; }
+
+    [Display(Name = "County")]
+    public int? CountyId { get; set; }
+
+    [Display(Name = "Sub County")]
+    public int? SubCountyId { get; set; }
+
+    [Display(Name = "Location")]
+    public int? LocationId { get; set; }
+
+    [Display(Name = "Sub Location")]
+    public int? SubLocationId { get; set; }
+
+    [Display(Name = "Village")]
+    public int? VillageId { get; set; }
+
+    [Display(Name = "Application Date From")]
+    [DataType(DataType.Date)]
+    public DateOnly? ApplicationDateFrom { get; set; }
+
+    [Display(Name = "Application Date To")]
+    [DataType(DataType.Date)]
+    public DateOnly? ApplicationDateTo { get; set; }
+
+    public bool HasAnyFilter => !string.IsNullOrWhiteSpace(NameFilter) ||
+                               !string.IsNullOrWhiteSpace(IdNumberFilter) ||
+                               CountyId.HasValue ||
+                               SubCountyId.HasValue ||
+                               LocationId.HasValue ||
+                               SubLocationId.HasValue ||
+                               VillageId.HasValue ||
+                               ApplicationDateFrom.HasValue ||
+                               ApplicationDateTo.HasValue;
+}

@@ -12,6 +12,7 @@ using SocialAssistanceProgram.Core.Application.Interfaces;
 using SocialAssistanceProgram.Core.Domain.Models;
 using SocialAssistanceProgram.Infrastructure.Data;
 using SocialAssistanceProgram.ViewModels;
+using SocialAssistanceProgram.Common.ViewModels;
 
 namespace SocialAssistanceProgram.Controllers
 {
@@ -35,7 +36,7 @@ namespace SocialAssistanceProgram.Controllers
         }
 
         // GET: Applicants
-        public async Task<IActionResult> Index(int? pageNumber, int? pageSize)
+        public async Task<IActionResult> Index(int? pageNumber, int? pageSize, ApplicantFilterViewModel? filter)
         {
             var actualPageSize = pageSize ?? _paginationOptions.DefaultPageSize;
             
@@ -47,13 +48,19 @@ namespace SocialAssistanceProgram.Controllers
             
             var pageIndex = pageNumber ?? 1;
 
-            var paginatedApplicants = await _applicantService.GetPaginatedApplicantListAsync(pageIndex, actualPageSize);
+            var paginatedApplicants = await _applicantService.GetPaginatedApplicantListAsync(pageIndex, actualPageSize, filter);
             
             // Pass current page size to view for maintaining state
             ViewBag.CurrentPageSize = actualPageSize;
-            ViewBag.AvailablePageSizes = new List<int> { 5, 10, 20, 50, 100 }
+            ViewBag.AvailablePageSizes = new List<int> {1, 2, 5, 10, 20, 50, 100 }
                 .Where(size => size <= _paginationOptions.MaxPageSize)
                 .ToList();
+
+            // Populate filter dropdowns
+            await PopulateFilterDropdowns(filter);
+            
+            // Pass filter to view
+            ViewBag.Filter = filter ?? new ApplicantFilterViewModel();
             
             return View(paginatedApplicants);
         }
@@ -220,6 +227,74 @@ namespace SocialAssistanceProgram.Controllers
                 .ToListAsync();
 
             return Json(villages);
+        }
+
+        private async Task PopulateFilterDropdowns(ApplicantFilterViewModel? filter)
+        {
+            // Always populate counties
+            ViewData["FilterCountyId"] = new SelectList(_context.Set<County>(), "Id", "Name", filter?.CountyId);
+
+            if (filter?.CountyId.HasValue == true)
+            {
+                // Populate sub counties for the selected county
+                ViewData["FilterSubCountyId"] = new SelectList(
+                    await _context.Set<SubCounty>()
+                        .Where(sc => sc.CountyId == filter.CountyId.Value)
+                        .ToListAsync(),
+                    "Id", "Name", filter.SubCountyId);
+
+                if (filter.SubCountyId.HasValue)
+                {
+                    // Populate locations for the selected sub county
+                    ViewData["FilterLocationId"] = new SelectList(
+                        await _context.Set<Location>()
+                            .Where(l => l.SubCountyId == filter.SubCountyId.Value)
+                            .ToListAsync(),
+                        "Id", "Name", filter.LocationId);
+
+                    if (filter.LocationId.HasValue)
+                    {
+                        // Populate sub locations for the selected location
+                        ViewData["FilterSubLocationId"] = new SelectList(
+                            await _context.Set<SubLocation>()
+                                .Where(sl => sl.LocationId == filter.LocationId.Value)
+                                .ToListAsync(),
+                            "Id", "Name", filter.SubLocationId);
+
+                        if (filter.SubLocationId.HasValue)
+                        {
+                            // Populate villages for the selected sub location
+                            ViewData["FilterVillageId"] = new SelectList(
+                                await _context.Set<Village>()
+                                    .Where(v => v.SubLocationId == filter.SubLocationId.Value)
+                                    .ToListAsync(),
+                                "Id", "Name", filter.VillageId);
+                        }
+                        else
+                        {
+                            ViewData["FilterVillageId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                        }
+                    }
+                    else
+                    {
+                        ViewData["FilterSubLocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                        ViewData["FilterVillageId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                    }
+                }
+                else
+                {
+                    ViewData["FilterLocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                    ViewData["FilterSubLocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                    ViewData["FilterVillageId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                }
+            }
+            else
+            {
+                ViewData["FilterSubCountyId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                ViewData["FilterLocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                ViewData["FilterSubLocationId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+                ViewData["FilterVillageId"] = new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Name");
+            }
         }
 
         private async Task PopulateDropDownsAsync(Applicant? applicant = null)

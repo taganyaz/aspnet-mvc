@@ -1,0 +1,200 @@
+﻿using SocialAssistanceProgram.Common.ViewModels;
+using SocialAssistanceProgram.Core.Domain.Interfaces;
+using SocialAssistanceProgram.Core.Domain.Models;
+using SocialAssistanceProgram.Common.Pagination;
+using SocialAssistanceProgram.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+
+namespace SocialAssistanceProgram.Infrastructure.Repositories;
+
+public class ApplicantRepository : IApplicantRepository
+{
+    private readonly ApplicationDbContext _context;
+    public ApplicantRepository(ApplicationDbContext context)
+    {
+        _context = context;
+    }
+    public async Task AddAsync(Applicant applicant)
+    {
+        await _context.Applicant.AddAsync(applicant);
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task DeleteAsync(int id)
+    {
+        var applicant = await _context.Applicant.FindAsync(id);
+        if (applicant != null)
+        {
+            _context.Applicant.Remove(applicant);
+            await _context.SaveChangesAsync();
+        }
+    }
+
+    public async Task<IEnumerable<Applicant>> GetAllAsync()
+    {
+        return await _context.Applicant
+            .Include(a => a.Gender)
+            .Include(a => a.MaritalStatus)
+            .Include(a => a.Village)
+                .ThenInclude(v => v!.SubLocation)
+                    .ThenInclude(sl => sl!.Location)
+                        .ThenInclude(l => l!.SubCounty)
+                            .ThenInclude(sc => sc!.County)
+            .Include(a => a.Officer)
+            .OrderByDescending(a => a.ApplicationDate)
+            .ThenBy(a => a.LastName)
+            .ThenBy(a => a.FirstName)
+            .ToListAsync();
+    }
+
+    public async Task<PaginatedList<Applicant>> GetPaginatedAsync(int pageIndex, int pageSize)
+    {
+        var applicants = _context.Applicant
+            .Include(a => a.Gender)
+            .Include(a => a.MaritalStatus)
+            .Include(a => a.Village)
+                .ThenInclude(v => v!.SubLocation)
+                    .ThenInclude(sl => sl!.Location)
+                        .ThenInclude(l => l!.SubCounty)
+                            .ThenInclude(sc => sc!.County)
+            .Include(a => a.Officer)
+            .OrderByDescending(a => a.ApplicationDate)
+            .ThenBy(a => a.LastName)
+            .ThenBy(a => a.FirstName);
+
+        return await PaginatedList<Applicant>.CreateAsync(applicants, pageIndex, pageSize);
+    }
+
+    public async Task<PaginatedList<ApplicantListViewModel>> GetPaginatedListAsync(int pageIndex, int pageSize)
+    {
+        return await GetPaginatedListAsync(pageIndex, pageSize, null);
+    }
+
+    public async Task<PaginatedList<ApplicantListViewModel>> GetPaginatedListAsync(int pageIndex, int pageSize, ApplicantFilterViewModel? filter)
+    {
+        var query = _context.Applicant
+            .Include(a => a.Village)
+                .ThenInclude(v => v!.SubLocation)
+                    .ThenInclude(sl => sl!.Location)
+                        .ThenInclude(l => l!.SubCounty)
+                            .ThenInclude(sc => sc!.County)
+            .Include(a => a.Officer)
+            .AsQueryable();
+
+        // Apply filters
+        if (filter != null)
+        {
+            // Name filter - search in FirstName, MiddleName, LastName
+            if (!string.IsNullOrWhiteSpace(filter.NameFilter))
+            {
+                var nameFilter = filter.NameFilter.Trim();
+                query = query.Where(a => 
+                    a.FirstName.Contains(nameFilter) ||
+                    a.MiddleName.Contains(nameFilter) ||
+                    a.LastName.Contains(nameFilter));
+            }
+
+            // ID Number filter
+            if (!string.IsNullOrWhiteSpace(filter.IdNumberFilter))
+            {
+                var idFilter = filter.IdNumberFilter.Trim();
+                query = query.Where(a => a.IdNumber.Contains(idFilter));
+            }
+
+            // Village filter (most specific)
+            if (filter.VillageId.HasValue)
+            {
+                query = query.Where(a => a.VillageId == filter.VillageId.Value);
+            }
+            // SubLocation filter
+            else if (filter.SubLocationId.HasValue)
+            {
+                query = query.Where(a => a.Village!.SubLocationId == filter.SubLocationId.Value);
+            }
+            // Location filter
+            else if (filter.LocationId.HasValue)
+            {
+                query = query.Where(a => a.Village!.SubLocation!.LocationId == filter.LocationId.Value);
+            }
+            // SubCounty filter
+            else if (filter.SubCountyId.HasValue)
+            {
+                query = query.Where(a => a.Village!.SubLocation!.Location!.SubCountyId == filter.SubCountyId.Value);
+            }
+            // County filter (least specific)
+            else if (filter.CountyId.HasValue)
+            {
+                query = query.Where(a => a.Village!.SubLocation!.Location!.SubCounty!.CountyId == filter.CountyId.Value);
+            }
+        }
+
+        var applicants = query
+            .Select(a => new ApplicantListViewModel
+            {
+                Id = a.Id,
+                ApplicationDate = a.ApplicationDate,
+                FullName = (a.FirstName + " " + a.MiddleName + " " + a.LastName).Replace("  ", " ").Trim(),
+                IdNumber = a.IdNumber,
+                County = a.Village != null && a.Village.SubLocation != null && a.Village.SubLocation.Location != null
+                    && a.Village.SubLocation.Location.SubCounty != null && a.Village.SubLocation.Location.SubCounty.County != null
+                    ? a.Village.SubLocation.Location.SubCounty.County.Name : null,
+                SubCounty = a.Village != null && a.Village.SubLocation != null && a.Village.SubLocation.Location != null
+                    && a.Village.SubLocation.Location.SubCounty != null
+                    ? a.Village.SubLocation.Location.SubCounty.Name : null,
+                Location = a.Village != null && a.Village.SubLocation != null && a.Village.SubLocation.Location != null
+                    ? a.Village.SubLocation.Location.Name : null,
+                SubLocation = a.Village != null && a.Village.SubLocation != null
+                    ? a.Village.SubLocation.Name : null,
+                Village = a.Village != null ? a.Village.Name : null,
+                Officer = a.Officer != null ? a.Officer.FullName : null,
+                SignedDate = a.SignedDate
+            })
+            .OrderByDescending(a => a.ApplicationDate)
+            .ThenBy(a => a.FullName);
+
+        return await PaginatedList<ApplicantListViewModel>.CreateAsync(applicants, pageIndex, pageSize);
+    }
+
+    public Task<Applicant?> GetByIdAsync(int id)
+    {
+        return _context.Applicant
+            .Include(x => x.ApplicantSocialPrograms)
+            .Include(a => a.Village)
+                .ThenInclude(v => v!.SubLocation)
+                    .ThenInclude(sl => sl!.Location)
+                        .ThenInclude(l => l!.SubCounty)
+                            .ThenInclude(sc => sc!.County)
+        .FirstOrDefaultAsync(a => a.Id == id);
+    }
+
+    public async Task UpdateAsync(Applicant applicant)
+    {
+        var currentSocialPrograms = applicant.ApplicantSocialPrograms.ToList();
+        applicant.ApplicantSocialPrograms.Clear();
+
+        var existingPrograms = _context.Set<ApplicantSocialProgram>()
+            .Where(asp => asp.ApplicantId == applicant.Id).ToList();
+
+        var toRemove = existingPrograms
+            .Where(ep => !currentSocialPrograms.Any(sp => sp.SocialProgramId == ep.SocialProgramId))
+            .ToList();
+
+        var toAdd = currentSocialPrograms
+            .Where(sp => !existingPrograms.Any(ep => ep.SocialProgramId == sp.SocialProgramId))
+            .ToList();
+
+        if (toRemove.Any())
+            _context.Set<ApplicantSocialProgram>().RemoveRange(toRemove);
+
+        if (toAdd.Any())
+            foreach (var sp in toAdd)
+            {
+                _context.Entry(sp).State = EntityState.Added;
+                applicant.ApplicantSocialPrograms.Add(sp);
+            }
+
+        _context.Entry(applicant).State = EntityState.Modified;
+
+        await _context.SaveChangesAsync();
+    }
+}
