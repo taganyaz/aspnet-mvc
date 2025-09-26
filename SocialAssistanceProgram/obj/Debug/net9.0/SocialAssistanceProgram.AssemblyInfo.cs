@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SocialAssistanceProgram")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdc67bdc71c1f88acf33bf48e963f9d3d0c87bd6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fc9fad0a6a046752d869393606fa46d1814b578")]
 [assembly: System.Reflection.AssemblyProductAttribute("SocialAssistanceProgram")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SocialAssistanceProgram")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

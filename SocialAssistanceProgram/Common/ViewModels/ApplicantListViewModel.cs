@@ -1,0 +1,38 @@
+using System.ComponentModel.DataAnnotations;
+
+namespace SocialAssistanceProgram.Common.ViewModels;
+
+public class ApplicantListViewModel
+{
+    public int Id { get; set; }
+
+    [Display(Name = "Application Date")]
+    public DateOnly ApplicationDate { get; set; }
+
+    [Display(Name = "Full Name")]
+    public string FullName { get; set; } = string.Empty;
+
+    [Display(Name = "ID Number")]
+    public string IdNumber { get; set; } = string.Empty;
+
+    [Display(Name = "County")]
+    public string? County { get; set; }
+
+    [Display(Name = "Sub County")]
+    public string? SubCounty { get; set; }
+
+    [Display(Name = "Location")]
+    public string? Location { get; set; }
+
+    [Display(Name = "Sub Location")]
+    public string? SubLocation { get; set; }
+
+    [Display(Name = "Village")]
+    public string? Village { get; set; }
+
+    [Display(Name = "Officer")]
+    public string? Officer { get; set; }
+
+    [Display(Name = "Signed Date")]
+    public DateOnly SignedDate { get; set; }
+}

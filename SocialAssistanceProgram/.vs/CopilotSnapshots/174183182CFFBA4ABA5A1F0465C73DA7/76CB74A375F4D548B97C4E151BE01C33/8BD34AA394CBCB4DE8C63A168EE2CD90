@@ -1,0 +1,20 @@
+﻿using AutoMapper;
+using SocialAssistanceProgram.Core.Application.ViewModels;
+using SocialAssistanceProgram.Core.Domain.Models;
+
+namespace SocialAssistanceProgram.Core.Application.Mappings;
+
+public class MappingProfile : Profile
+{
+    public MappingProfile()
+    {
+        // Map Applicant to ApplicantListViewModel for index display
+        CreateMap<Applicant, ApplicantListViewModel>()
+            .ForMember(dest => dest.County, opt => opt.MapFrom(src => src.Village!.SubLocation!.Location!.SubCounty!.County!.Name))
+            .ForMember(dest => dest.SubCounty, opt => opt.MapFrom(src => src.Village!.SubLocation!.Location!.SubCounty!.Name))
+            .ForMember(dest => dest.Location, opt => opt.MapFrom(src => src.Village!.SubLocation!.Location!.Name))
+            .ForMember(dest => dest.SubLocation, opt => opt.MapFrom(src => src.Village!.SubLocation!.Name))
+            .ForMember(dest => dest.Village, opt => opt.MapFrom(src => src.Village!.Name))
+            .ForMember(dest => dest.Officer, opt => opt.MapFrom(src => src.Officer!.FullName));
+    }
+}

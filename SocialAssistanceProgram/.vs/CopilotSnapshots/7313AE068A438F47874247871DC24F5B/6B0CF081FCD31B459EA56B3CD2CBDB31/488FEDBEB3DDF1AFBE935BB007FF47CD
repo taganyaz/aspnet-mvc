@@ -1,0 +1,56 @@
+﻿using SocialAssistanceProgram.Core.Application.Interfaces;
+using SocialAssistanceProgram.Common.ViewModels;
+using SocialAssistanceProgram.Core.Domain.Interfaces;
+using SocialAssistanceProgram.Core.Domain.Models;
+using SocialAssistanceProgram.Core.Shared;
+
+namespace SocialAssistanceProgram.Core.Application.Services;
+
+public class ApplicantService : IApplicantService
+{
+    private readonly IApplicantRepository _applicantRepository;
+
+    public ApplicantService(IApplicantRepository applicantRepository)
+    {
+        _applicantRepository = applicantRepository;
+    }
+
+    public async Task AddApplicantAsync(Applicant applicant)
+    {
+        await _applicantRepository.AddAsync(applicant);
+    }
+
+    public async Task DeleteApplicantAsync(int id)
+    {
+        var applicant = await _applicantRepository.GetByIdAsync(id);
+        if (applicant != null)
+        {
+            await _applicantRepository.DeleteAsync(id);
+        }
+    }
+
+    public async Task<IEnumerable<Applicant>> GetAllApplicantsAsync()
+    {
+        return await _applicantRepository.GetAllAsync();
+    }
+
+    public async Task<PaginatedList<Applicant>> GetPaginatedApplicantsAsync(int pageIndex, int pageSize)
+    {
+        return await _applicantRepository.GetPaginatedAsync(pageIndex, pageSize);
+    }
+
+    public async Task<PaginatedList<ApplicantListViewModel>> GetPaginatedApplicantListAsync(int pageIndex, int pageSize)
+    {
+        return await _applicantRepository.GetPaginatedListAsync(pageIndex, pageSize);
+    }
+
+    public async Task<Applicant?> GetApplicantByIdAsync(int id)
+    {
+        return await _applicantRepository.GetByIdAsync(id);
+    }
+
+    public async Task UpdateApplicantAsync(Applicant applicant)
+    {
+        await _applicantRepository.UpdateAsync(applicant);
+    }
+}

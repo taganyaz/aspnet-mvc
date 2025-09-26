@@ -1,0 +1,13 @@
+﻿using AutoMapper;
+using SocialAssistanceProgram.Core.Domain.Models;
+
+namespace SocialAssistanceProgram.Core.Application.Mappings;
+
+public class MappingProfile : Profile
+{
+    public MappingProfile()
+    {
+        // No longer needed since we're working directly with domain models
+        // This keeps the Profile class intact in case it's needed for future use
+    }
+}

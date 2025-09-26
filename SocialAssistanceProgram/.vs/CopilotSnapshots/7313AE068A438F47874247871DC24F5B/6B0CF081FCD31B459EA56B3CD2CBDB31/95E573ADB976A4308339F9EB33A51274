@@ -1,0 +1,16 @@
+﻿using SocialAssistanceProgram.Common.ViewModels;
+using SocialAssistanceProgram.Core.Domain.Models;
+using SocialAssistanceProgram.Core.Shared;
+
+namespace SocialAssistanceProgram.Core.Domain.Interfaces;
+
+public interface IApplicantRepository
+{
+    Task<IEnumerable<Applicant>> GetAllAsync();
+    Task<PaginatedList<Applicant>> GetPaginatedAsync(int pageIndex, int pageSize);
+    Task<PaginatedList<ApplicantListViewModel>> GetPaginatedListAsync(int pageIndex, int pageSize);
+    Task<Applicant?> GetByIdAsync(int id);
+    Task AddAsync(Applicant applicant);
+    Task UpdateAsync(Applicant applicant);
+    Task DeleteAsync(int id);
+}
