@@ -1,0 +1,184 @@
+﻿@using SocialAssistanceProgram.Core.Domain.Models
+@using SocialAssistanceProgram.Core.Shared
+@model PaginatedList<Applicant>
+
+@{
+    ViewData["Title"] = "Applications";
+}
+
+<h1>Applications</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+@if (Model.TotalCount > 0)
+{
+    <div class="mb-3">
+        <p class="text-muted">
+            Showing @Model.FirstItemOnPage to @Model.LastItemOnPage of @Model.TotalCount applications
+        </p>
+    </div>
+}
+
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>
+                Application Date
+            </th>
+            <th>
+                Full Name
+            </th>
+            <th>
+                Date of Birth
+            </th>
+            <th>
+                Gender
+            </th>
+            <th>
+                Marital Status
+            </th>
+            <th>
+                ID Number
+            </th>
+            <th>
+                Village
+            </th>
+            <th>
+                Officer
+            </th>
+            <th>
+                Signed Date
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@if (Model.Any())
+{
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.ApplicationDate.ToString("MMM dd, yyyy")
+            </td>
+            <td>
+                @item.FullName
+            </td>
+            <td>
+                @item.DateOfBirth.ToString("MMM dd, yyyy")
+            </td>
+            <td>
+                @(item.Gender?.Name ?? "N/A")
+            </td>
+            <td>
+                @(item.MaritalStatus?.Name ?? "N/A")
+            </td>
+            <td>
+                @item.IdNumber
+            </td>
+            <td>
+                @(item.Village?.Name ?? "N/A")
+            </td>
+            <td>
+                @(item.Officer?.FullName ?? "N/A")
+            </td>
+            <td>
+                @item.SignedDate.ToString("MMM dd, yyyy")
+            </td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Actions">
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Details</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                </div>
+            </td>
+        </tr>
+    }
+}
+else
+{
+    <tr>
+        <td colspan="10" class="text-center">
+            <div class="alert alert-info" role="alert">
+                No applications found.
+            </div>
+        </td>
+    </tr>
+}
+    </tbody>
+</table>
+
+@if (Model.TotalPages > 1)
+{
+    @{
+        var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+        var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+    }
+
+    <nav aria-label="Applicants pagination">
+        <ul class="pagination justify-content-center">
+            <li class="page-item @prevDisabled">
+                <a asp-action="Index" 
+                   asp-route-pageNumber="@(Model.PageIndex - 1)" 
+                   class="page-link" 
+                   aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            
+            @if (Model.PageIndex > 3)
+            {
+                <li class="page-item">
+                    <a asp-action="Index" asp-route-pageNumber="1" class="page-link">1</a>
+                </li>
+                @if (Model.PageIndex > 4)
+                {
+                    <li class="page-item disabled">
+                        <span class="page-link">...</span>
+                    </li>
+                }
+            }
+            
+            @for (int i = Math.Max(1, Model.PageIndex - 2); i <= Math.Min(Model.TotalPages, Model.PageIndex + 2); i++)
+            {
+                <li class="page-item @(i == Model.PageIndex ? "active" : "")">
+                    <a asp-action="Index" 
+                       asp-route-pageNumber="@i" 
+                       class="page-link">@i</a>
+                </li>
+            }
+            
+            @if (Model.PageIndex < Model.TotalPages - 2)
+            {
+                @if (Model.PageIndex < Model.TotalPages - 3)
+                {
+                    <li class="page-item disabled">
+                        <span class="page-link">...</span>
+                    </li>
+                }
+                <li class="page-item">
+                    <a asp-action="Index" asp-route-pageNumber="@Model.TotalPages" class="page-link">@Model.TotalPages</a>
+                </li>
+            }
+            
+            <li class="page-item @nextDisabled">
+                <a asp-action="Index" 
+                   asp-route-pageNumber="@(Model.PageIndex + 1)" 
+                   class="page-link"
+                   aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="text-center mt-3">
+        <p class="text-muted">
+            Page @Model.PageIndex of @Model.TotalPages 
+            (@Model.Count items on this page)
+        </p>
+    </div>
+}

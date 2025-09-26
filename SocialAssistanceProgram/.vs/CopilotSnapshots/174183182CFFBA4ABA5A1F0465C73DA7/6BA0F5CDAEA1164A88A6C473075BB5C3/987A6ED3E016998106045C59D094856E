@@ -1,0 +1,16 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "ApplicationDbContext": "Server=(localdb)\\mssqllocaldb;Database=SAPDB;Trusted_Connection=True;MultipleActiveResultSets=true"
+  },
+  "Pagination": {
+    "DefaultPageSize": 10,
+    "MaxPageSize": 100
+  }
+}
